@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block title %}Compliance Dashboard | VendorSentinel AI{% endblock %}
+{% block eyebrow %}Governance and Controls{% endblock %}
+{% block page_title %}Third-Party Compliance Dashboard{% endblock %}
+{% block page_subtitle %}Evidence-based oversight across GDPR, NIST and SOX requirements.{% endblock %}
+
+{% block page_actions %}
+<a class="button button-primary" href="{{ url_for('export_report', report_type='compliance-gaps') }}">
+    Download gap report
+</a>
+{% endblock %}
+
+{% block content %}
+<section class="metric-grid" data-stagger>
+    <article class="metric-card metric-teal">
+        <div class="metric-card-top">
+            <span class="metric-icon">G</span>
+            <span class="metric-trend neutral">Article 28</span>
+        </div>
+        <div class="metric-value">
+            <span data-count="{{ summary.gdpr_percentage or 0 }}" data-decimals="1">
+                {{ summary.gdpr_percentage or 0 }}
+            </span><small>%</small>
+        </div>
+        <div class="metric-label">GDPR DPA coverage</div>
+        <p>Vendors with a recorded Data Processing Agreement.</p>
+    </article>
+
+    <article class="metric-card metric-blue">
+        <div class="metric-card-top">
+            <span class="metric-icon">S</span>
+            <span class="metric-trend neutral">Assurance</span>
+        </div>
+        <div class="metric-value">
+            <span data-count="{{ summary.soc2_percentage or 0 }}" data-decimals="1">
+                {{ summary.soc2_percentage or 0 }}
+            </span><small>%</small>
+        </div>
+        <div class="metric-label">SOC 2 coverage</div>
+        <p>Portfolio coverage for independent control assurance.</p>
+    </article>
+
+    <article class="metric-card metric-critical">
+        <div class="metric-card-top">
+            <span class="metric-icon">B</span>
+            <span class="metric-trend critical">12 months</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.recent_breaches or 0 }}">
+            {{ summary.recent_breaches or 0 }}
+        </div>
+        <div class="metric-label">Recent vendor breaches</div>
+        <p>Recorded breach events within the previous 365 days.</p>
+    </article>
+
+    <article class="metric-card metric-high">
+        <div class="metric-card-top">
+            <span class="metric-icon">C</span>
+            <span class="metric-trend high">Access control</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.expired_contract_access or 0 }}">
+            {{ summary.expired_contract_access or 0 }}
+        </div>
+        <div class="metric-label">Expired contracts with access</div>
+        <p>Expired relationships that still retain active system access.</p>
+    </article>
+</section>
+
+<section class="panel readiness-panel" data-animate>
+    <div class="panel-header">
+        <div>
+            <span class="panel-kicker">Control coverage</span>
+            <h2>Framework readiness</h2>
+            <p>Current portfolio readiness against selected requirements.</p>
+        </div>
+    </div>
+
+    <div class="readiness-grid">
+        <article class="readiness-card">
+            <div class="readiness-card-header">
+                <div>
+                    <span class="framework-code">GDPR</span>
+                    <h3>Article 28</h3>
+                    <p>Processor agreement coverage</p>
+                </div>
+                <strong>{{ summary.gdpr_percentage }}%</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill progress-blue" style="width: {{ summary.gdpr_percentage }}%;"></div>
+            </div>
+        </article>
+
+        <article class="readiness-card">
+            <div class="readiness-card-header">
+                <div>
+                    <span class="framework-code">SOX</span>
+                    <h3>Section 404</h3>
+                    <p>Independent assurance coverage</p>
+                </div>
+                <strong>{{ summary.soc2_percentage }}%</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill progress-teal" style="width: {{ summary.soc2_percentage }}%;"></div>
+            </div>
+        </article>
+
+        <article class="readiness-card">
+            <div class="readiness-card-header">
+                <div>
+                    <span class="framework-code">NIST</span>
+                    <h3>SA-9</h3>
+                    <p>Assurance plus current assessment</p>
+                </div>
+                <strong>{{ summary.nist_percentage }}%</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill progress-violet" style="width: {{ summary.nist_percentage }}%;"></div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="panel data-panel" data-scroll-reveal>
+    <div class="panel-header panel-header-table">
+        <div>
+            <span class="panel-kicker">Evidence gaps</span>
+            <h2>Compliance findings</h2>
+            <p>Prioritized missing evidence and required remediation.</p>
+        </div>
+
+        <span class="panel-chip">{{ total_issue_count }} findings</span>
+    </div>
+
+    <div class="table-wrap">
+        <table class="data-table compliance-table">
+            <thead>
+            <tr>
+                <th>Vendor</th>
+                <th>Framework</th>
+                <th>Issue</th>
+                <th>Severity</th>
+                <th>Required action</th>
+                <th>Risk score</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for issue in issues %}
+            <tr>
+                <td class="vendor-cell">
+                    <a
+                        class="vendor-name-link"
+                        href="{{ url_for('vendor_detail', vendor_id=issue.vendor_id) }}"
+                    >
+                        {{ issue.vendor_name }}
+                    </a>
+                    <span>{{ issue.vendor_id }} · {{ issue.category }}</span>
+                </td>
+
+                <td><span class="framework-badge">{{ issue.framework }}</span></td>
+                <td><strong>{{ issue.issue }}</strong></td>
+
+                <td>
+                    <span class="risk-badge risk-{{ issue.severity|lower }}">
+                        {{ issue.severity }}
+                    </span>
+                </td>
+
+                <td class="action-copy">{{ issue.required_action }}</td>
+                <td><span class="score-pill">{{ issue.final_risk_score }}</span></td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="6">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">✓</div>
+                        <h3>No compliance gaps</h3>
+                        <p>No evidence gaps are currently recorded.</p>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {% include "_pagination.html" %}
+</section>
+{% endblock %}

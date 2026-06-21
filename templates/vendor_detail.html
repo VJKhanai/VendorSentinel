@@ -1,0 +1,607 @@
+{% extends "base.html" %}
+
+{% block title %}{{ vendor.vendor_name }} | VendorSentinel AI{% endblock %}
+{% block eyebrow %}Vendor Investigation{% endblock %}
+{% block page_title %}{{ vendor.vendor_name }}{% endblock %}
+{% block page_subtitle %}{{ vendor.vendor_id }} · {{ vendor.category }} · Evidence-based risk profile{% endblock %}
+
+{% block extra_head %}
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+{% endblock %}
+
+{% block page_actions %}
+<a class="button button-ghost" href="{{ url_for('vendors_page') }}">
+    Back to register
+</a>
+<a class="button button-primary" href="#remediation">
+    Manage remediation
+</a>
+{% endblock %}
+
+{% block content %}
+{% if remediation_saved %}
+<div class="toast toast-success" data-toast>
+    <span>✓</span>
+    <div>
+        <strong>Remediation plan saved</strong>
+        <p>The owner, status, target date and notes were updated.</p>
+    </div>
+</div>
+{% endif %}
+
+<section class="vendor-hero" data-animate>
+    <div class="vendor-identity">
+        <div class="vendor-avatar">{{ vendor.vendor_name[:2]|upper }}</div>
+        <div>
+            <div class="vendor-hero-meta">
+                <span>{{ vendor.vendor_id }}</span>
+                <span>{{ vendor.category }}</span>
+                {% if vendor.access_active %}
+                <span class="status-badge status-active">Access active</span>
+                {% else %}
+                <span class="status-badge status-muted">Access inactive</span>
+                {% endif %}
+            </div>
+            <h2>Current vendor risk assessment</h2>
+            <p>
+                Review the score drivers, evidence, compliance posture and
+                remediation decision for this third party.
+            </p>
+        </div>
+    </div>
+
+    <div class="vendor-hero-risk">
+        <span>Final risk score</span>
+        <strong>{{ vendor.final_risk_score }}</strong>
+        <span class="risk-badge risk-{{ vendor.final_risk_level|lower }}">
+            {{ vendor.final_risk_level }}
+        </span>
+    </div>
+</section>
+
+<section class="score-card-grid" data-stagger>
+    {% set score_cards = [
+        ("Final Risk", vendor.final_risk_score, vendor.final_risk_level|lower),
+        ("Access Risk", vendor.access_risk_score, "blue"),
+        ("Breach Risk", vendor.breach_risk_score, "red"),
+        ("Compliance Risk", vendor.compliance_risk_score, "amber"),
+        ("Lifecycle Risk", vendor.lifecycle_risk_score, "violet"),
+        ("Financial Exposure", vendor.financial_risk_score, "teal")
+    ] %}
+
+    {% for label, value, tone in score_cards %}
+    <article class="score-card score-card-{{ tone }}">
+        <div class="score-card-ring" style="--score: {{ value }};">
+            <strong>{{ value }}</strong>
+        </div>
+        <div>
+            <span>{{ label }}</span>
+            {% if label == "Financial Exposure" %}
+            <small>Annual-spend percentile proxy</small>
+            {% elif label == "Final Risk" %}
+            <small>{{ vendor.final_risk_level|title }} classification</small>
+            {% else %}
+            <small>0–100 component score</small>
+            {% endif %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
+
+{% if vendor.rule_overrides %}
+<section class="override-banner" data-animate>
+    <div class="override-icon">!</div>
+    <div>
+        <span>Deterministic rule override</span>
+        <h2>Critical control condition detected</h2>
+        {% for override in vendor.rule_overrides %}
+        <p>{{ override }}</p>
+        {% endfor %}
+    </div>
+    <span class="override-label">Escalation rule applied</span>
+</section>
+{% endif %}
+
+<section class="detail-grid detail-grid-two">
+    <article class="panel" data-animate>
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Vendor record</span>
+                <h2>Profile and commercial context</h2>
+            </div>
+        </div>
+
+        <dl class="detail-list">
+            <div><dt>Category</dt><dd>{{ vendor.category }}</dd></div>
+            <div><dt>Company-provided score</dt><dd>{{ vendor.company_risk_score }}/100</dd></div>
+            <div><dt>Financial input</dt><dd>Not provided in source data</dd></div>
+            <div><dt>Financial exposure proxy</dt><dd>{{ vendor.financial_risk_score }}/100</dd></div>
+            <div><dt>Annual spend</dt><dd>{{ vendor.annual_spend_display }}</dd></div>
+            <div><dt>Business liaison</dt><dd>{{ vendor.liaison_name or "Not assigned" }}</dd></div>
+            <div>
+                <dt>Liaison email</dt>
+                <dd>
+                    {% if vendor.liaison_email %}
+                    <a href="mailto:{{ vendor.liaison_email }}">{{ vendor.liaison_email }}</a>
+                    {% else %}
+                    Not recorded
+                    {% endif %}
+                </dd>
+            </div>
+        </dl>
+    </article>
+
+    <article class="panel" data-animate>
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Lifecycle controls</span>
+                <h2>Contract and assessment</h2>
+            </div>
+        </div>
+
+        <dl class="detail-list">
+            <div><dt>Contract start</dt><dd>{{ vendor.contract_start or "Not recorded" }}</dd></div>
+            <div><dt>Contract end</dt><dd>{{ vendor.contract_end or "Not recorded" }}</dd></div>
+            <div><dt>Last assessed</dt><dd>{{ vendor.last_assessed or "Not recorded" }}</dd></div>
+            <div>
+                <dt>Assessment status</dt>
+                <dd>
+                    {% if vendor.assessment_overdue %}
+                    <span class="status-badge status-warning">Overdue</span>
+                    {% else %}
+                    <span class="status-badge status-active">Current</span>
+                    {% endif %}
+                </dd>
+            </div>
+            <div>
+                <dt>System access</dt>
+                <dd>
+                    {% if vendor.access_active %}
+                    <span class="status-badge status-active">Active</span>
+                    {% else %}
+                    <span class="status-badge status-muted">Inactive</span>
+                    {% endif %}
+                </dd>
+            </div>
+            <div><dt>Access type</dt><dd>{{ vendor.access_type|replace('_', ' ')|title }}</dd></div>
+        </dl>
+    </article>
+</section>
+
+<section class="panel" data-scroll-reveal>
+    <div class="panel-header">
+        <div>
+            <span class="panel-kicker">Control evidence</span>
+            <h2>Compliance posture</h2>
+            <p>Independent assurance and data-processing evidence.</p>
+        </div>
+    </div>
+
+    <div class="evidence-grid">
+        <article class="evidence-card {% if vendor.soc2_type2 %}evidence-pass{% else %}evidence-fail{% endif %}">
+            <span class="evidence-status">{% if vendor.soc2_type2 %}✓{% else %}×{% endif %}</span>
+            <div>
+                <strong>SOC 2 Type II</strong>
+                <p>
+                    {% if vendor.soc2_type2 %}
+                        Available · Expires {{ vendor.soc2_expiry or "not recorded" }}
+                    {% else %}
+                        Evidence not available
+                    {% endif %}
+                </p>
+            </div>
+        </article>
+
+        <article class="evidence-card {% if vendor.iso27001 %}evidence-pass{% else %}evidence-fail{% endif %}">
+            <span class="evidence-status">{% if vendor.iso27001 %}✓{% else %}×{% endif %}</span>
+            <div>
+                <strong>ISO 27001</strong>
+                <p>
+                    {% if vendor.iso27001 %}
+                        Available · Expires {{ vendor.iso27001_expiry or "not recorded" }}
+                    {% else %}
+                        Evidence not available
+                    {% endif %}
+                </p>
+            </div>
+        </article>
+
+        <article class="evidence-card {% if vendor.gdpr_dpa %}evidence-pass{% else %}evidence-fail{% endif %}">
+            <span class="evidence-status">{% if vendor.gdpr_dpa %}✓{% else %}×{% endif %}</span>
+            <div>
+                <strong>GDPR DPA</strong>
+                <p>
+                    {% if vendor.gdpr_dpa %}
+                        Data Processing Agreement recorded
+                    {% else %}
+                        Agreement missing
+                    {% endif %}
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <div class="certification-register">
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Complete source evidence</span>
+                <h2>All supplied certifications</h2>
+            </div>
+        </div>
+        <div class="certification-chip-grid">
+            {% for certification in vendor.certifications %}
+            <div class="certification-chip certification-{{ certification.current_status|lower }}">
+                <strong>{{ certification.certification_name }}</strong>
+                <span>{{ certification.expiry_date }}</span>
+                <small>{{ certification.current_status|replace('_', ' ')|title }}</small>
+            </div>
+            {% else %}
+            <span class="empty-inline">No certification evidence supplied.</span>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="detail-grid detail-grid-two">
+    <article class="panel" data-scroll-reveal>
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Technical exposure</span>
+                <h2>Systems and access</h2>
+            </div>
+        </div>
+
+        <div class="exposure-summary">
+            <div>
+                <span>Data sensitivity</span>
+                <strong>{{ vendor.data_sensitivity }}/10</strong>
+            </div>
+            <div>
+                <span>Access scope</span>
+                <strong>{{ vendor.access_scope }}</strong>
+            </div>
+            <div>
+                <span>Access type</span>
+                <strong>{{ vendor.access_type|replace('_', ' ')|title }}</strong>
+            </div>
+            <div>
+                <span>Source scope</span>
+                <strong>{{ vendor.source_data_access_scope|replace('_', ' ')|title }}</strong>
+            </div>
+        </div>
+
+        <div class="tag-list">
+            {% for system in vendor.data_systems %}
+            <span class="tag">{{ system }}</span>
+            {% else %}
+            <span class="empty-inline">No systems recorded</span>
+            {% endfor %}
+        </div>
+    </article>
+
+    <article class="panel" data-scroll-reveal>
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Incident context</span>
+                <h2>Breach and investigation status</h2>
+            </div>
+        </div>
+
+        {% if vendor.had_breach %}
+        <div class="incident-card incident-open">
+            <div class="incident-icon">!</div>
+            <div>
+                <strong>Breach recorded</strong>
+                <p>
+                    {{ vendor.breach_date or "Date not recorded" }}
+                    · Severity {{ vendor.breach_severity or "Unknown" }}
+                </p>
+            </div>
+        </div>
+        {% else %}
+        <div class="incident-card incident-clear">
+            <div class="incident-icon">✓</div>
+            <div>
+                <strong>No recorded breach</strong>
+                <p>No breach event is currently associated with this vendor.</p>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if vendor.under_investigation %}
+        <div class="investigation-note">
+            Active security investigation requires executive oversight.
+        </div>
+        {% else %}
+        <div class="investigation-note investigation-note-clear">
+            No active security investigation.
+        </div>
+        {% endif %}
+    </article>
+</section>
+
+<section class="detail-grid detail-grid-two">
+    <article class="panel" data-scroll-reveal>
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Explainability</span>
+                <h2>Key risk findings</h2>
+            </div>
+        </div>
+
+        <ol class="finding-list">
+            {% for reason in vendor.risk_reasons %}
+            <li>
+                <span>{{ "%02d"|format(loop.index) }}</span>
+                <p>{{ reason }}</p>
+            </li>
+            {% else %}
+            <li><p>No material risk findings recorded.</p></li>
+            {% endfor %}
+        </ol>
+    </article>
+
+    <article class="panel" data-scroll-reveal>
+        <div class="panel-header">
+            <div>
+                <span class="panel-kicker">Action plan</span>
+                <h2>Recommended actions</h2>
+            </div>
+        </div>
+
+        <ul class="action-list">
+            {% for recommendation in vendor.recommendations %}
+            <li>
+                <span>→</span>
+                <p>{{ recommendation }}</p>
+            </li>
+            {% else %}
+            <li><p>Continue normal monitoring.</p></li>
+            {% endfor %}
+        </ul>
+
+        <div class="framework-section">
+            <span>Framework mappings</span>
+            <div class="tag-list">
+                {% for mapping in vendor.framework_mappings %}
+                <span class="tag tag-blue">{{ mapping }}</span>
+                {% else %}
+                <span class="empty-inline">No framework mapping recorded</span>
+                {% endfor %}
+            </div>
+        </div>
+    </article>
+</section>
+
+<section class="narrative-panel" data-scroll-reveal>
+    <div class="narrative-header">
+        <div>
+            <span class="panel-kicker">Decision support</span>
+            <h2>Explainable risk narrative</h2>
+            <p>Evidence-based interpretation of the deterministic score.</p>
+        </div>
+
+        <span class="engine-badge">
+            {{ ai_narrative.generated_by }}
+        </span>
+    </div>
+
+    <div class="narrative-summary">
+        {{ ai_narrative.executive_summary }}
+    </div>
+
+    <div class="narrative-grid">
+        <div>
+            <h3>Key factors</h3>
+            <ul>
+                {% for factor in ai_narrative.risk_factors %}
+                <li>{{ factor }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="narrative-recommendation">
+            <h3>Recommended action</h3>
+            <p>{{ ai_narrative.recommendation }}</p>
+        </div>
+    </div>
+</section>
+
+<section class="panel history-panel" data-scroll-reveal>
+    <div class="panel-header">
+        <div>
+            <span class="panel-kicker">Quarterly tracking</span>
+            <h2>Risk score history</h2>
+            <p>Historical snapshots used to monitor change over time.</p>
+        </div>
+
+        <span class="panel-chip">
+            {{ history|length }} snapshot{% if history|length != 1 %}s{% endif %}
+        </span>
+    </div>
+
+    {% if history %}
+    <div id="riskHistoryChart" class="plotly-chart history-chart"></div>
+
+    <div class="table-wrap history-table-wrap">
+        <table class="data-table history-table">
+            <thead>
+            <tr>
+                <th>Period</th>
+                <th>Final</th>
+                <th>Level</th>
+                <th>Access</th>
+                <th>Breach</th>
+                <th>Compliance</th>
+                <th>Lifecycle</th>
+                <th>Financial</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in history %}
+            <tr>
+                <td><strong>{{ item.snapshot_label }}</strong></td>
+                <td>{{ item.final_risk_score }}</td>
+                <td>
+                    <span class="risk-badge risk-{{ item.final_risk_level|lower }}">
+                        {{ item.final_risk_level }}
+                    </span>
+                </td>
+                <td>{{ item.access_risk_score }}</td>
+                <td>{{ item.breach_risk_score }}</td>
+                <td>{{ item.compliance_risk_score }}</td>
+                <td>{{ item.lifecycle_risk_score }}</td>
+                <td>{{ item.financial_risk_score }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <p class="panel-footnote">
+        The first snapshot establishes the baseline. Future quarterly or annual
+        snapshots will show score movement between periods.
+    </p>
+    {% else %}
+    <div class="empty-state">
+        <div class="empty-state-icon">↗</div>
+        <h3>No historical snapshots</h3>
+        <p>Run snapshot_risk_history.py after scoring vendors.</p>
+    </div>
+    {% endif %}
+</section>
+
+<section class="panel remediation-panel" id="remediation" data-scroll-reveal>
+    <div class="remediation-header">
+        <div>
+            <span class="panel-kicker">Human decision</span>
+            <h2>Remediation tracking</h2>
+            <p>Assign accountability, deadline and next action.</p>
+        </div>
+
+        <span class="status-badge status-{{ remediation.status|lower }}">
+            {{ remediation.status|replace('_', ' ')|title }}
+        </span>
+    </div>
+
+    <form
+        method="POST"
+        action="{{ url_for('update_remediation', vendor_id=vendor.vendor_id) }}"
+        class="remediation-form"
+    >
+        <label class="form-field">
+            <span>Action owner</span>
+            <input
+                type="text"
+                name="owner"
+                value="{{ remediation.owner or '' }}"
+                placeholder="e.g. Cyber Risk Manager"
+            >
+        </label>
+
+        <label class="form-field">
+            <span>Status</span>
+            <select name="status">
+                {% for value, label in [
+                    ("NOT_STARTED", "Not Started"),
+                    ("IN_PROGRESS", "In Progress"),
+                    ("BLOCKED", "Blocked"),
+                    ("COMPLETED", "Completed")
+                ] %}
+                <option
+                    value="{{ value }}"
+                    {% if remediation.status == value %}selected{% endif %}
+                >
+                    {{ label }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <label class="form-field">
+            <span>Target date</span>
+            <input
+                type="date"
+                name="due_date"
+                value="{{ remediation.due_date or '' }}"
+            >
+        </label>
+
+        <label class="form-field form-field-full">
+            <span>Remediation notes</span>
+            <textarea
+                name="notes"
+                rows="5"
+                placeholder="Document the action plan, evidence required and escalation path."
+            >{{ remediation.notes or '' }}</textarea>
+        </label>
+
+        <div class="remediation-footer">
+            <div>
+                {% if remediation.updated_at %}
+                Last updated {{ remediation.updated_at }}
+                {% else %}
+                No remediation plan has been saved yet.
+                {% endif %}
+            </div>
+
+            <button class="button button-primary" type="submit">
+                Save remediation plan
+            </button>
+        </div>
+    </form>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{% if history_chart_json %}
+<script>
+    const historyFigure = {{ history_chart_json | safe }};
+
+    historyFigure.layout = {
+        ...historyFigure.layout,
+        font: {
+            family: "Inter, system-ui, sans-serif",
+            color: "#53627a"
+        },
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
+        xaxis: {
+            ...historyFigure.layout.xaxis,
+            gridcolor: "#edf1f6",
+            linecolor: "#dfe5ee"
+        },
+        yaxis: {
+            ...historyFigure.layout.yaxis,
+            gridcolor: "#edf1f6",
+            zeroline: false
+        }
+    };
+
+    if (historyFigure.data?.[0]) {
+        historyFigure.data[0].line = {
+            color: "#315efb",
+            width: 3
+        };
+        historyFigure.data[0].marker = {
+            color: "#ffffff",
+            line: { color: "#315efb", width: 3 },
+            size: 11
+        };
+        historyFigure.data[0].fill = "tozeroy";
+        historyFigure.data[0].fillcolor = "rgba(49, 94, 251, 0.08)";
+    }
+
+    Plotly.newPlot(
+        "riskHistoryChart",
+        historyFigure.data,
+        historyFigure.layout,
+        {
+            responsive: true,
+            displayModeBar: false,
+            displaylogo: false
+        }
+    );
+</script>
+{% endif %}
+{% endblock %}

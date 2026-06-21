@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}Vendor Risk Register | VendorSentinel AI{% endblock %}
+{% block eyebrow %}Third-Party Inventory{% endblock %}
+{% block page_title %}Vendor Risk Register{% endblock %}
+{% block page_subtitle %}Search, filter and investigate the complete vendor portfolio.{% endblock %}
+
+{% block page_actions %}
+<a class="button button-secondary" href="{{ url_for('reports_page') }}">
+    Export reports
+</a>
+{% endblock %}
+
+{% block content %}
+<section class="metric-grid compact-metrics" data-stagger>
+    <article class="mini-metric">
+        <span>Matching vendors</span>
+        <strong data-count="{{ filtered_summary.total_items }}">{{ filtered_summary.total_items }}</strong>
+    </article>
+    <article class="mini-metric">
+        <span>Critical in result</span>
+        <strong>
+            {{ filtered_summary.critical_count }}
+        </strong>
+    </article>
+    <article class="mini-metric">
+        <span>High risk in result</span>
+        <strong>
+            {{ filtered_summary.high_count }}
+        </strong>
+    </article>
+    <article class="mini-metric">
+        <span>Categories available</span>
+        <strong>{{ categories|length }}</strong>
+    </article>
+</section>
+
+<section class="panel filter-panel" data-animate>
+    <form method="GET" action="{{ url_for('vendors_page') }}" class="filter-form">
+        <label class="form-field search-field">
+            <span>Search vendor</span>
+            <div class="input-with-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m21 20-4.4-4.4a7 7 0 1 0-1.4 1.4L19.6 21zM5 11a6 6 0 1 1 12 0 6 6 0 0 1-12 0"/>
+                </svg>
+                <input
+                    type="search"
+                    name="search"
+                    value="{{ search_text }}"
+                    placeholder="Name, vendor ID or category"
+                >
+            </div>
+        </label>
+
+        <label class="form-field">
+            <span>Risk level</span>
+            <select name="risk_level">
+                <option value="">All risk levels</option>
+                {% for risk_level in ["CRITICAL", "HIGH", "MEDIUM", "LOW"] %}
+                <option
+                    value="{{ risk_level }}"
+                    {% if selected_risk_level == risk_level %}selected{% endif %}
+                >
+                    {{ risk_level|title }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <label class="form-field">
+            <span>Category</span>
+            <select name="category">
+                <option value="">All categories</option>
+                {% for category in categories %}
+                <option
+                    value="{{ category }}"
+                    {% if selected_category == category %}selected{% endif %}
+                >
+                    {{ category }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <div class="filter-actions">
+            <button class="button button-primary" type="submit">Apply filters</button>
+            <a class="button button-ghost" href="{{ url_for('vendors_page') }}">
+                Clear
+            </a>
+        </div>
+    </form>
+</section>
+
+<section class="panel data-panel" data-animate>
+    <div class="panel-header panel-header-table">
+        <div>
+            <span class="panel-kicker">Portfolio inventory</span>
+            <h2>{{ filtered_summary.total_items }} vendors</h2>
+            <p>
+                Ordered by severity and current operational risk score.
+                Showing 20 vendors per page.
+            </p>
+        </div>
+
+        {% if search_text or selected_risk_level or selected_category %}
+        <div class="active-filter-list">
+            {% if search_text %}<span>Search: {{ search_text }}</span>{% endif %}
+            {% if selected_risk_level %}<span>{{ selected_risk_level }}</span>{% endif %}
+            {% if selected_category %}<span>{{ selected_category }}</span>{% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="table-wrap">
+        <table class="data-table vendor-table">
+            <thead>
+            <tr>
+                <th>Vendor</th>
+                <th>Risk</th>
+                <th>Access</th>
+                <th>Breach</th>
+                <th>Compliance</th>
+                <th>Lifecycle</th>
+                <th>Financial</th>
+                <th>Contract</th>
+                <th>Access status</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for vendor in vendors %}
+            <tr>
+                <td class="vendor-cell">
+                    <a
+                        class="vendor-name-link"
+                        href="{{ url_for('vendor_detail', vendor_id=vendor.vendor_id) }}"
+                    >
+                        {{ vendor.vendor_name }}
+                    </a>
+                    <span>{{ vendor.vendor_id }} · {{ vendor.category }}</span>
+                </td>
+
+                <td class="risk-cell">
+                    <div class="risk-score-row">
+                        <strong>{{ vendor.final_risk_score }}</strong>
+                        <span class="risk-badge risk-{{ vendor.final_risk_level|lower }}">
+                            {{ vendor.final_risk_level }}
+                        </span>
+                    </div>
+                    <span class="table-subtext">
+                        Company score: {{ vendor.company_risk_score }}
+                    </span>
+                    <div class="score-track score-track-small">
+                        <div
+                            class="score-fill score-fill-{{ vendor.final_risk_level|lower }}"
+                            style="width: {{ vendor.final_risk_score }}%;"
+                        ></div>
+                    </div>
+                </td>
+
+                <td><span class="score-pill">{{ vendor.access_risk_score }}</span></td>
+                <td><span class="score-pill">{{ vendor.breach_risk_score }}</span></td>
+                <td><span class="score-pill">{{ vendor.compliance_risk_score }}</span></td>
+                <td><span class="score-pill">{{ vendor.lifecycle_risk_score }}</span></td>
+                <td><span class="score-pill">{{ vendor.financial_risk_score }}</span></td>
+
+                <td>
+                    <div class="table-primary">{{ vendor.contract_end or "Not recorded" }}</div>
+                    {% if vendor.assessment_overdue %}
+                    <span class="inline-warning">Assessment overdue</span>
+                    {% endif %}
+                </td>
+
+                <td>
+                    {% if vendor.access_active %}
+                    <span class="status-badge status-active">Active</span>
+                    {% else %}
+                    <span class="status-badge status-muted">Inactive</span>
+                    {% endif %}
+                    <span class="table-subtext">{{ vendor.access_type|replace('_', ' ')|title }}</span>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="9">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">⌕</div>
+                        <h3>No vendors found</h3>
+                        <p>Try changing the search term or clearing the filters.</p>
+                        <a class="button button-secondary" href="{{ url_for('vendors_page') }}">
+                            Clear filters
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {% include "_pagination.html" %}
+</section>
+{% endblock %}

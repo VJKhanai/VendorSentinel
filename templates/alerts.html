@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block title %}Risk Alerts | VendorSentinel AI{% endblock %}
+{% block eyebrow %}Continuous Monitoring{% endblock %}
+{% block page_title %}Vendor Risk Alerts{% endblock %}
+{% block page_subtitle %}Prioritized contract, certification, assessment and breach events.{% endblock %}
+
+{% block page_actions %}
+<a class="button button-secondary" href="{{ url_for('vendors_page') }}">
+    Open risk register
+</a>
+{% endblock %}
+
+{% block content %}
+<section class="metric-grid" data-stagger>
+    <article class="metric-card metric-blue">
+        <div class="metric-card-top">
+            <span class="metric-icon">A</span>
+            <span class="metric-trend neutral">All events</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.total_alerts or 0 }}">
+            {{ summary.total_alerts or 0 }}
+        </div>
+        <div class="metric-label">Total alerts</div>
+        <p>Active monitoring events across the vendor portfolio.</p>
+    </article>
+
+    <article class="metric-card metric-critical">
+        <div class="metric-card-top">
+            <span class="metric-icon">!</span>
+            <span class="metric-trend critical">Immediate</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.critical_alerts or 0 }}">
+            {{ summary.critical_alerts or 0 }}
+        </div>
+        <div class="metric-label">Critical alerts</div>
+        <p>Events requiring immediate escalation and containment.</p>
+    </article>
+
+    <article class="metric-card metric-high">
+        <div class="metric-card-top">
+            <span class="metric-icon">H</span>
+            <span class="metric-trend high">Priority</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.high_alerts or 0 }}">
+            {{ summary.high_alerts or 0 }}
+        </div>
+        <div class="metric-label">High alerts</div>
+        <p>Material control gaps requiring time-bound action.</p>
+    </article>
+
+    <article class="metric-card metric-teal">
+        <div class="metric-card-top">
+            <span class="metric-icon">V</span>
+            <span class="metric-trend neutral">Impacted</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.affected_vendors or 0 }}">
+            {{ summary.affected_vendors or 0 }}
+        </div>
+        <div class="metric-label">Affected vendors</div>
+        <p>Unique third parties with at least one active event.</p>
+    </article>
+</section>
+
+<section class="panel filter-panel alert-filter-panel" data-animate>
+    <form method="GET" action="{{ url_for('alerts_page') }}" class="filter-form filter-form-compact">
+        <label class="form-field">
+            <span>Alert severity</span>
+            <select name="severity">
+                <option value="">All severities</option>
+                {% for severity in ["CRITICAL", "HIGH", "MEDIUM"] %}
+                <option
+                    value="{{ severity }}"
+                    {% if selected_severity == severity %}selected{% endif %}
+                >
+                    {{ severity|title }}
+                </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <div class="filter-actions">
+            <button class="button button-primary" type="submit">Apply filter</button>
+            <a class="button button-ghost" href="{{ url_for('alerts_page') }}">Clear</a>
+        </div>
+
+        <div class="filter-summary">
+            <strong>{{ pagination.total_items }}</strong> vendors
+            <span>·</span>
+            <strong>{{ displayed_alert_count }}</strong> matching alerts
+            <span>·</span>
+            <strong>{{ page_alert_count }}</strong> on this page
+        </div>
+    </form>
+</section>
+
+<section class="alert-feed" data-animate>
+    {% for group in vendor_alert_groups %}
+    <details
+        class="alert-group alert-group-{{ group.highest_severity|lower }}"
+        {% if loop.index <= 3 %}open{% endif %}
+    >
+        <summary>
+            <div class="alert-severity-marker"></div>
+
+            <div class="alert-vendor">
+                <div class="vendor-avatar vendor-avatar-small">
+                    {{ group.vendor_name[:2]|upper }}
+                </div>
+                <div>
+                    <strong>{{ group.vendor_name }}</strong>
+                    <span>{{ group.vendor_id }} · {{ group.category }}</span>
+                </div>
+            </div>
+
+            <div class="alert-summary-meta">
+                <span class="risk-badge risk-{{ group.highest_severity|lower }}">
+                    {{ group.highest_severity }}
+                </span>
+                <span class="alert-count">
+                    {{ group.alerts|length }}
+                    issue{% if group.alerts|length != 1 %}s{% endif %}
+                </span>
+                <strong class="alert-score">{{ group.final_risk_score }}</strong>
+                <span class="chevron">⌄</span>
+            </div>
+        </summary>
+
+        <div class="alert-group-body">
+            <div class="alert-issue-list">
+                {% for alert in group.alerts %}
+                <article class="alert-issue">
+                    <div class="alert-issue-level">
+                        <span class="risk-badge risk-{{ alert.alert_severity|lower }}">
+                            {{ alert.alert_severity }}
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>{{ alert.alert_type }}</strong>
+                        <p>{{ alert.alert_message }}</p>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+
+            <div class="alert-group-footer">
+                <div>
+                    Vendor risk:
+                    <strong>{{ group.final_risk_level }}</strong>
+                    · Score <strong>{{ group.final_risk_score }}</strong>
+                </div>
+
+                <a
+                    class="button button-primary"
+                    href="{{ url_for('vendor_detail', vendor_id=group.vendor_id) }}"
+                >
+                    Review vendor and remediation
+                </a>
+            </div>
+        </div>
+    </details>
+    {% else %}
+    <section class="panel">
+        <div class="empty-state">
+            <div class="empty-state-icon">✓</div>
+            <h3>No matching alerts</h3>
+            <p>No active alerts match the selected severity.</p>
+            <a class="button button-secondary" href="{{ url_for('alerts_page') }}">
+                Clear filter
+            </a>
+        </div>
+    </section>
+    {% endfor %}
+</section>
+
+{% include "_pagination.html" %}
+{% endblock %}

@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block title %}Reports | VendorSentinel AI{% endblock %}
+{% block eyebrow %}Audit Evidence Centre{% endblock %}
+{% block page_title %}Audit-Ready Reports{% endblock %}
+{% block page_subtitle %}Export current third-party risk evidence for management, compliance and audit.{% endblock %}
+
+{% block content %}
+<section class="metric-grid" data-stagger>
+    <article class="metric-card metric-blue">
+        <div class="metric-card-top">
+            <span class="metric-icon">V</span>
+            <span class="metric-trend neutral">Inventory</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.total_vendors or 0 }}">
+            {{ summary.total_vendors or 0 }}
+        </div>
+        <div class="metric-label">Total vendors</div>
+        <p>Complete portfolio available for export and review.</p>
+    </article>
+
+    <article class="metric-card metric-critical">
+        <div class="metric-card-top">
+            <span class="metric-icon">!</span>
+            <span class="metric-trend critical">Priority</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.critical_vendors or 0 }}">
+            {{ summary.critical_vendors or 0 }}
+        </div>
+        <div class="metric-label">Critical vendors</div>
+        <p>Vendors requiring executive-level risk oversight.</p>
+    </article>
+
+    <article class="metric-card metric-high">
+        <div class="metric-card-top">
+            <span class="metric-icon">G</span>
+            <span class="metric-trend high">Evidence</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.compliance_gaps or 0 }}">
+            {{ summary.compliance_gaps or 0 }}
+        </div>
+        <div class="metric-label">Vendors with gaps</div>
+        <p>Third parties with one or more compliance evidence gaps.</p>
+    </article>
+
+    <article class="metric-card metric-teal">
+        <div class="metric-card-top">
+            <span class="metric-icon">D</span>
+            <span class="metric-trend neutral">Sensitivity ≥ 8</span>
+        </div>
+        <div class="metric-value" data-count="{{ summary.sensitive_access or 0 }}">
+            {{ summary.sensitive_access or 0 }}
+        </div>
+        <div class="metric-label">Sensitive-access vendors</div>
+        <p>Vendors with access to highly sensitive information.</p>
+    </article>
+</section>
+
+<section class="report-intro" data-animate>
+    <div>
+        <span class="panel-kicker">Evidence exports</span>
+        <h2>Choose an audit-ready report</h2>
+        <p>
+            CSV exports are generated directly from the current scored vendor
+            portfolio and can be opened in Excel or imported into GRC workflows.
+        </p>
+    </div>
+
+    <div class="audit-alignment">
+        <span>Aligned to</span>
+        <strong>GDPR · NIST SA-9 · SOX 404</strong>
+    </div>
+</section>
+
+<section class="report-grid" data-stagger>
+    <article class="report-card">
+        <div class="report-card-icon report-icon-blue">01</div>
+        <div class="report-card-body">
+            <span class="report-type">CSV · Full portfolio</span>
+            <h2>Complete Vendor Risk Register</h2>
+            <p>
+                All vendors, final scores, five component scores, access,
+                contract, breach and compliance attributes.
+            </p>
+
+            <div class="report-meta">
+                <span>{{ summary.total_vendors }} vendor records</span>
+                <span>Current snapshot</span>
+            </div>
+        </div>
+
+        <a
+            class="button button-primary button-full"
+            href="{{ url_for('export_report', report_type='all-vendors') }}"
+        >
+            Download CSV
+        </a>
+    </article>
+
+    <article class="report-card">
+        <div class="report-card-icon report-icon-red">02</div>
+        <div class="report-card-body">
+            <span class="report-type">CSV · Executive priority</span>
+            <h2>Critical Vendor Report</h2>
+            <p>
+                Critical vendor findings, financial exposure, breach context,
+                rule overrides and recommended actions.
+            </p>
+
+            <div class="report-meta">
+                <span>{{ summary.critical_vendors }} critical vendors</span>
+                <span>Escalation evidence</span>
+            </div>
+        </div>
+
+        <a
+            class="button button-primary button-full"
+            href="{{ url_for('export_report', report_type='critical-vendors') }}"
+        >
+            Download CSV
+        </a>
+    </article>
+
+    <article class="report-card">
+        <div class="report-card-icon report-icon-amber">03</div>
+        <div class="report-card-body">
+            <span class="report-type">CSV · Governance</span>
+            <h2>Compliance Evidence Gaps</h2>
+            <p>
+                Missing GDPR agreements, assurance evidence, overdue
+                assessments and lifecycle control gaps.
+            </p>
+
+            <div class="report-meta">
+                <span>{{ summary.compliance_gaps }} vendors with gaps</span>
+                <span>Audit preparation</span>
+            </div>
+        </div>
+
+        <a
+            class="button button-primary button-full"
+            href="{{ url_for('export_report', report_type='compliance-gaps') }}"
+        >
+            Download CSV
+        </a>
+    </article>
+
+    <article class="report-card">
+        <div class="report-card-icon report-icon-teal">04</div>
+        <div class="report-card-body">
+            <span class="report-type">CSV · Data exposure</span>
+            <h2>Sensitive Data Access Report</h2>
+            <p>
+                Vendors with highly sensitive access, system scope, access type,
+                contract status and breach history.
+            </p>
+
+            <div class="report-meta">
+                <span>{{ summary.sensitive_access }} sensitive-access vendors</span>
+                <span>Data governance</span>
+            </div>
+        </div>
+
+        <a
+            class="button button-primary button-full"
+            href="{{ url_for('export_report', report_type='sensitive-access') }}"
+        >
+            Download CSV
+        </a>
+    </article>
+</section>
+
+<section class="audit-note-panel" data-scroll-reveal>
+    <div class="audit-note-icon">i</div>
+    <div>
+        <h3>Auditability by design</h3>
+        <p>
+            Reports are generated from deterministic scores and current SQLite
+            records. The external narrative layer does not calculate or alter
+            the official risk score.
+        </p>
+    </div>
+</section>
+{% endblock %}

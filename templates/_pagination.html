@@ -1,0 +1,84 @@
+{% if pagination %}
+<div class="pagination-bar">
+    <div class="pagination-summary">
+        Showing
+        <strong>{{ pagination.start_item }}–{{ pagination.end_item }}</strong>
+        of <strong>{{ pagination.total_items }}</strong>
+        · Page
+        <strong>{{ pagination.current_page }}/{{ pagination.total_pages }}</strong>
+        · {{ pagination.per_page }} per page
+    </div>
+
+    <nav class="pagination-controls" aria-label="Pagination">
+        {% if pagination.has_previous %}
+        <a
+            class="pagination-button pagination-edge"
+            href="{{ pagination.first_url }}"
+            aria-label="First page"
+        >
+            «
+        </a>
+        <a
+            class="pagination-button"
+            href="{{ pagination.previous_url }}"
+            aria-label="Previous page"
+        >
+            Previous
+        </a>
+        {% else %}
+        <span
+            class="pagination-button pagination-edge disabled"
+            aria-hidden="true"
+        >
+            «
+        </span>
+        <span class="pagination-button disabled">Previous</span>
+        {% endif %}
+
+        <div class="pagination-pages">
+            {% for link in pagination.links %}
+                {% if link.is_current %}
+                <span
+                    class="pagination-button pagination-number active"
+                    aria-current="page"
+                >
+                    {{ link.number }}
+                </span>
+                {% else %}
+                <a
+                    class="pagination-button pagination-number"
+                    href="{{ link.url }}"
+                >
+                    {{ link.number }}
+                </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        {% if pagination.has_next %}
+        <a
+            class="pagination-button"
+            href="{{ pagination.next_url }}"
+            aria-label="Next page"
+        >
+            Next
+        </a>
+        <a
+            class="pagination-button pagination-edge"
+            href="{{ pagination.last_url }}"
+            aria-label="Last page"
+        >
+            »
+        </a>
+        {% else %}
+        <span class="pagination-button disabled">Next</span>
+        <span
+            class="pagination-button pagination-edge disabled"
+            aria-hidden="true"
+        >
+            »
+        </span>
+        {% endif %}
+    </nav>
+</div>
+{% endif %}

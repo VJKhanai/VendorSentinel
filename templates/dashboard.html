@@ -1,0 +1,306 @@
+    {% extends "base.html" %}
+
+    {% block title %}Executive Dashboard | VendorSentinel AI{% endblock %}
+    {% block eyebrow %}Portfolio Overview{% endblock %}
+    {% block page_title %}Executive Risk Dashboard{% endblock %}
+    {% block page_subtitle %}A live view of vendor exposure, concentration and priority actions.{% endblock %}
+
+    {% block extra_head %}
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    {% endblock %}
+
+    {% block page_actions %}
+    <a class="button button-secondary" href="{{ url_for('reports_page') }}">
+        Export evidence
+    </a>
+    <a class="button button-primary" href="{{ url_for('alerts_page') }}">
+        Review alerts
+    </a>
+    {% endblock %}
+
+    {% block content %}
+    <section class="portfolio-strip" data-animate>
+        <div>
+            <span class="portfolio-strip-label">Portfolio state</span>
+            <strong>
+                {% if summary.critical_vendors %}
+                    Immediate attention required
+                {% else %}
+                    Portfolio within tolerance
+                {% endif %}
+            </strong>
+        </div>
+
+        <div class="portfolio-strip-items">
+            <div>
+                <span>Critical</span>
+                <strong>{{ summary.critical_vendors or 0 }}</strong>
+            </div>
+            <div>
+                <span>High risk</span>
+                <strong>{{ summary.high_vendors or 0 }}</strong>
+            </div>
+            <div>
+                <span>Average score</span>
+                <strong>{{ summary.average_risk_score or 0 }}</strong>
+            </div>
+            <div>
+                <span>Scoring model</span>
+                <strong>5 dimensions</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="metric-grid" data-stagger>
+        <article class="metric-card metric-blue">
+            <div class="metric-card-top">
+                <span class="metric-icon">V</span>
+                <span class="metric-trend neutral">Portfolio</span>
+            </div>
+            <div class="metric-value" data-count="{{ summary.total_vendors or 0 }}">
+                {{ summary.total_vendors or 0 }}
+            </div>
+            <div class="metric-label">Total vendors</div>
+            <p>Complete third-party inventory under active monitoring.</p>
+        </article>
+
+        <article class="metric-card metric-critical">
+            <div class="metric-card-top">
+                <span class="metric-icon">!</span>
+                <span class="metric-trend critical">Escalate</span>
+            </div>
+            <div class="metric-value" data-count="{{ summary.critical_vendors or 0 }}">
+                {{ summary.critical_vendors or 0 }}
+            </div>
+            <div class="metric-label">Critical vendors</div>
+            <p>Vendors requiring immediate Cyber Risk and Procurement review.</p>
+        </article>
+
+        <article class="metric-card metric-high">
+            <div class="metric-card-top">
+                <span class="metric-icon">H</span>
+                <span class="metric-trend high">Monitor</span>
+            </div>
+            <div class="metric-value" data-count="{{ summary.high_vendors or 0 }}">
+                {{ summary.high_vendors or 0 }}
+            </div>
+            <div class="metric-label">High-risk vendors</div>
+            <p>Elevated exposures that need time-bound remediation.</p>
+        </article>
+
+        <article class="metric-card metric-teal">
+            <div class="metric-card-top">
+                <span class="metric-icon">Ø</span>
+                <span class="metric-trend neutral">0–100 scale</span>
+            </div>
+            <div class="metric-value" data-count="{{ summary.average_risk_score or 0 }}" data-decimals="1">
+                {{ summary.average_risk_score or 0 }}
+            </div>
+            <div class="metric-label">Average risk score</div>
+            <p>Current weighted score across the monitored portfolio.</p>
+        </article>
+    </section>
+
+    <section class="dashboard-grid dashboard-grid-primary">
+        <article class="panel chart-panel" data-animate>
+            <div class="panel-header">
+                <div>
+                    <span class="panel-kicker">Portfolio mix</span>
+                    <h2>Risk distribution</h2>
+                    <p>Current vendor population by operational risk level.</p>
+                </div>
+                <span class="panel-chip">Live scoring</span>
+            </div>
+
+            <div id="riskChart" class="plotly-chart plotly-chart-large"></div>
+        </article>
+
+        <article class="panel priority-panel" data-animate>
+            <div class="panel-header">
+                <div>
+                    <span class="panel-kicker">Action queue</span>
+                    <h2>Priority vendors</h2>
+                    <p>Highest-priority vendors based on current risk score.</p>
+                </div>
+                <a class="text-link" href="{{ url_for('vendors_page', risk_level='CRITICAL') }}">
+                    View all
+                </a>
+            </div>
+
+            <div class="priority-list">
+                {% for vendor in top_vendors[:7] %}
+                <a
+                    class="priority-item"
+                    href="{{ url_for('vendor_detail', vendor_id=vendor.vendor_id) }}"
+                >
+                    <div class="priority-rank">{{ "%02d"|format(loop.index) }}</div>
+
+                    <div class="priority-main">
+                        <strong>{{ vendor.vendor_name }}</strong>
+                        <span>{{ vendor.vendor_id }} · {{ vendor.category }}</span>
+
+                        <div class="score-track">
+                            <div
+                                class="score-fill score-fill-{{ vendor.final_risk_level|lower }}"
+                                style="width: {{ vendor.final_risk_score }}%;"
+                            ></div>
+                        </div>
+                    </div>
+
+                    <div class="priority-score">
+                        <strong>{{ vendor.final_risk_score }}</strong>
+                        <span class="risk-badge risk-{{ vendor.final_risk_level|lower }}">
+                            {{ vendor.final_risk_level }}
+                        </span>
+                    </div>
+                </a>
+                {% else %}
+                <div class="empty-state">
+                    <div class="empty-state-icon">✓</div>
+                    <h3>No priority vendors</h3>
+                    <p>No vendors currently require escalation.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+    </section>
+
+    <section class="dashboard-grid dashboard-grid-analytics">
+        <article class="panel chart-panel" data-scroll-reveal>
+            <div class="panel-header">
+                <div>
+                    <span class="panel-kicker">Concentration analysis</span>
+                    <h2>Average risk by category</h2>
+                    <p>Compare portfolio exposure across vendor categories.</p>
+                </div>
+            </div>
+
+            <div id="categoryRiskChart" class="plotly-chart"></div>
+        </article>
+
+        <article class="panel chart-panel" data-scroll-reveal>
+            <div class="panel-header">
+                <div>
+                    <span class="panel-kicker">Vendor ranking</span>
+                    <h2>Top 10 highest-risk vendors</h2>
+                    <p>Current final scores for the most exposed vendors.</p>
+                </div>
+            </div>
+
+            <div id="topRiskChart" class="plotly-chart"></div>
+        </article>
+    </section>
+    {% endblock %}
+
+    {% block scripts %}
+    <script>
+        const plotlyConfig = {
+            responsive: true,
+            displayModeBar: false,
+            displaylogo: false
+        };
+
+        const riskFigure = {{ chart_json | safe }};
+        const categoryRiskFigure = {{ category_chart_json | safe }};
+        const topRiskFigure = {{ top_risk_chart_json | safe }};
+
+        const commonFont = {
+            family: "Inter, system-ui, sans-serif",
+            color: "#53627a"
+    };
+
+    riskFigure.layout = {
+        ...riskFigure.layout,
+        font: commonFont,
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
+        legend: {
+            orientation: "h",
+            x: 0.5,
+            xanchor: "center",
+            y: -0.08,
+            font: { size: 11, color: "#53627a" }
+        }
+    };
+
+    if (riskFigure.data?.[0]) {
+        riskFigure.data[0].marker = {
+            colors: ["#2aa876", "#e3ad3a", "#d9424e", "#f07b3f"],
+            line: { color: "#ffffff", width: 5 }
+        };
+        riskFigure.data[0].textfont = {
+            family: "Inter, system-ui, sans-serif",
+            size: 12,
+            color: "#22314d"
+        };
+    }
+
+    categoryRiskFigure.layout = {
+        ...categoryRiskFigure.layout,
+        font: commonFont,
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
+        margin: { l: 50, r: 22, t: 15, b: 95 },
+        xaxis: {
+            ...categoryRiskFigure.layout.xaxis,
+            tickfont: { size: 10, color: "#65738a" },
+            linecolor: "#dfe5ee",
+            gridcolor: "rgba(0,0,0,0)"
+        },
+        yaxis: {
+            ...categoryRiskFigure.layout.yaxis,
+            tickfont: { size: 10, color: "#65738a" },
+            gridcolor: "#edf1f6",
+            zeroline: false
+        }
+    };
+
+    if (categoryRiskFigure.data?.[0]) {
+        const categoryPalette = [
+            "#315efb", "#4975ff", "#5d8bff", "#72a0ff", "#8ab4ff",
+            "#65b9b1", "#4eaaa2", "#379b93", "#238c84", "#147b74"
+        ];
+        categoryRiskFigure.data[0].marker = {
+            color: categoryPalette,
+            line: { color: "#ffffff", width: 1 }
+        };
+        categoryRiskFigure.data[0].textfont = {
+            family: "Inter, system-ui, sans-serif",
+            color: "#22314d",
+            size: 11
+        };
+    }
+
+    topRiskFigure.layout = {
+        ...topRiskFigure.layout,
+        font: commonFont,
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
+        margin: { l: 170, r: 48, t: 15, b: 55 },
+        xaxis: {
+            ...topRiskFigure.layout.xaxis,
+            gridcolor: "#edf1f6",
+            zeroline: false,
+            tickfont: { size: 10, color: "#65738a" }
+        },
+        yaxis: {
+            ...topRiskFigure.layout.yaxis,
+            tickfont: { size: 10, color: "#34435d" }
+        }
+    };
+
+    Plotly.newPlot("riskChart", riskFigure.data, riskFigure.layout, plotlyConfig);
+    Plotly.newPlot(
+        "categoryRiskChart",
+        categoryRiskFigure.data,
+        categoryRiskFigure.layout,
+        plotlyConfig
+    );
+    Plotly.newPlot(
+        "topRiskChart",
+        topRiskFigure.data,
+        topRiskFigure.layout,
+        plotlyConfig
+    );
+</script>
+{% endblock %}
