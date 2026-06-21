@@ -1,0 +1,1 @@
+"""VendorSentinel service layer."""
