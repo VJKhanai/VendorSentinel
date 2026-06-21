@@ -1,0 +1,65 @@
+VENDORSENTINEL COMPANY DATASET EVALUATION
+==========================================
+
+Dataset: Societe Generale Problem 06 sample data
+Dataset snapshot date: 2026-04-20
+Vendors evaluated: 400
+
+BINARY ANOMALY DETECTION
+------------------------
+True Positives:  322
+False Positives: 0
+False Negatives: 0
+True Negatives:  78
+
+Precision: 100.00%
+Recall:    100.00%
+Accuracy:  100.00%
+
+PRIORITY METRICS
+----------------
+Critical vendors: 52
+Critical recall: 100.00%
+High + Critical vendors: 174
+High + Critical severity recall: 100.00%
+
+EXACT CLASSIFICATION
+--------------------
+Exact anomaly-type accuracy: 100.00%
+Exact severity accuracy:     100.00%
+Mismatched records:          0
+
+SEVERITY CONFUSION MATRIX
+-------------------------
+Predicted  CRITICAL  HIGH  LOW  MEDIUM  NONE
+Actual                                      
+CRITICAL         52     0    0       0     0
+HIGH              0   122    0       0     0
+LOW               0     0   18       0     0
+MEDIUM            0     0    0     130     0
+NONE              0     0    0       0    78
+
+ANOMALY-TYPE CONFUSION MATRIX
+-----------------------------
+Predicted                       BREACHED_VENDOR_HIGH_ACCESS  CONTRACT_EXPIRED_ACTIVE_ACCESS  ELEVATED_RISK_VENDOR  EXPIRED_CERTIFICATION  HIGH_RISK_SCORE  LOW_RISK_VENDOR  RECENTLY_BREACHED_VENDOR  VENDOR_UNDER_INVESTIGATION
+Actual                                                                                                                                                                                                                          
+BREACHED_VENDOR_HIGH_ACCESS                              30                               0                     0                      0                0                0                         0                           0
+CONTRACT_EXPIRED_ACTIVE_ACCESS                            0                               3                     0                      0                0                0                         0                           0
+ELEVATED_RISK_VENDOR                                      0                               0                    18                      0                0                0                         0                           0
+EXPIRED_CERTIFICATION                                     0                               0                     0                    138                0                0                         0                           0
+HIGH_RISK_SCORE                                           0                               0                     0                      0               82                0                         0                           0
+LOW_RISK_VENDOR                                           0                               0                     0                      0                0               78                         0                           0
+RECENTLY_BREACHED_VENDOR                                  0                               0                     0                      0                0                0                        29                           0
+VENDOR_UNDER_INVESTIGATION                                0                               0                     0                      0                0                0                         0                          22
+
+INTERPRETATION
+--------------
+The evaluation uses the company-provided label file only after scoring is
+complete. Labels are not used as model inputs. The deterministic rules mirror
+the published benchmark conditions: investigations, recent breaches combined
+with high-access scopes, company risk thresholds, certification expiry,
+contract expiry, and elevated-risk monitoring.
+
+A perfect benchmark result means that the implementation reproduces the
+published sample-data rules. It is not evidence of guaranteed real-world
+accuracy, where vendor data can be incomplete, delayed, or contradictory.
