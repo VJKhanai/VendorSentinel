@@ -1,0 +1,64 @@
+/* VendorSentinel: focused two-graph dashboard */
+
+.two-graph-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.focused-chart-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.focused-chart-card .panel-header {
+    min-height: 92px;
+    padding-bottom: 4px;
+}
+
+.focused-plotly-chart {
+    width: 100%;
+    min-height: 440px;
+}
+
+.focused-chart-card .js-plotly-plot,
+.focused-chart-card .plot-container,
+.focused-chart-card .svg-container {
+    width: 100% !important;
+}
+
+.focused-chart-card .modebar {
+    display: none !important;
+}
+
+.dashboard-priority-panel {
+    overflow: hidden;
+}
+
+.priority-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 18px;
+    padding: 2px 16px 18px;
+}
+
+.priority-list-grid .priority-item {
+    border-top: 1px solid #edf1f6;
+}
+
+@media (max-width: 1120px) {
+    .two-graph-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .priority-list-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .focused-plotly-chart {
+        min-height: 390px;
+    }
+}
