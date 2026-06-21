@@ -1,0 +1,401 @@
+record_id,vendor_name,is_anomaly,anomaly_type,severity,explanation,expired_certifications
+VND00000,Enterprise Group,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: GDPR, SOC2","GDPR, SOC2"
+VND00001,CloudSync Innovations,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,HIPAA
+VND00002,Global Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00003,SecureNet Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 92/100 exceeds acceptable threshold (80),GDPR
+VND00004,SecureNet Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00005,Analytics Pro Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00006,Global Systems,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,GDPR
+VND00007,Digital Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 88/100 exceeds acceptable threshold (80),None
+VND00008,Smart Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00009,Digital Partners,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, PCI-DSS","FedRAMP, PCI-DSS"
+VND00010,DataVault Group,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00011,Analytics Pro Ltd,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 78/100 elevated - increased monitoring recommended,None
+VND00012,DataVault Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00013,Analytics Pro Corp,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,ISO27001
+VND00014,Future Systems,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has All_Systems access,"PCI-DSS, SOC2"
+VND00015,DataVault Solutions,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (SOC2, ISO27001) for vendor with sensitive data access","SOC2, ISO27001"
+VND00016,TechFlow Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00017,Global Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: SOC2, HIPAA","SOC2, HIPAA"
+VND00018,TechFlow Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 81/100 exceeds acceptable threshold (80),None
+VND00019,CloudSync Technologies,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),ISO27001
+VND00020,Analytics Pro Systems,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 90/100 exceeds acceptable threshold (80),None
+VND00021,CloudSync Systems,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 81/100 exceeds acceptable threshold (80),GDPR
+VND00022,Analytics Pro Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00023,Enterprise Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00024,Analytics Pro Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,"HIPAA, ISO27001"
+VND00025,Smart Services,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 75/100 elevated - increased monitoring recommended,None
+VND00026,CloudSync Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00027,Analytics Pro Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),ISO27001
+VND00028,Digital Inc,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: SOC2, GDPR","SOC2, GDPR"
+VND00029,TechFlow Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, SOC2","PCI-DSS, SOC2"
+VND00030,Analytics Pro Partners,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (GDPR) for vendor with sensitive data access,GDPR
+VND00031,Analytics Pro Innovations,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00032,Future Group,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 69/100 elevated - increased monitoring recommended,None
+VND00033,TechFlow Partners,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00034,SecureNet Systems,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 68/100 elevated - increased monitoring recommended,None
+VND00035,Global Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 89/100 exceeds acceptable threshold (80),None
+VND00036,Future Inc,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00037,Future Corp,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (PCI-DSS, HIPAA) for vendor with sensitive data access","PCI-DSS, HIPAA"
+VND00038,CloudSync Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00039,Global Inc,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,GDPR
+VND00040,TechFlow Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 82/100 exceeds acceptable threshold (80),None
+VND00041,Smart Group,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (ISO27001) for vendor with sensitive data access,ISO27001
+VND00042,Enterprise Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00043,DataVault Systems,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (GDPR) for vendor with sensitive data access,GDPR
+VND00044,CloudSync Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00045,Digital Partners,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00046,Enterprise Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00047,DataVault Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00048,Global Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00049,DataVault Corp,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: ISO27001, HIPAA","ISO27001, HIPAA"
+VND00050,Smart Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 94/100 exceeds acceptable threshold (80),None
+VND00051,Global Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00052,Future Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00053,SecureNet Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00054,Global Systems,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (ISO27001) for vendor with sensitive data access,ISO27001
+VND00055,Enterprise Technologies,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (GDPR) for vendor with sensitive data access,GDPR
+VND00056,Analytics Pro Solutions,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,ISO27001
+VND00057,Analytics Pro Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 95/100 exceeds acceptable threshold (80),ISO27001
+VND00058,DataVault Technologies,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),FedRAMP
+VND00059,Global Ltd,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (ISO27001, FedRAMP) for vendor with sensitive data access","ISO27001, FedRAMP"
+VND00060,Enterprise Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00061,SecureNet Solutions,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (SOC2) for vendor with sensitive data access,SOC2
+VND00062,DataVault Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00063,SecureNet Partners,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,FedRAMP
+VND00064,Enterprise Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00065,TechFlow Partners,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: HIPAA, FedRAMP","HIPAA, FedRAMP"
+VND00066,SecureNet Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),None
+VND00067,DataVault Inc,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: ISO27001, HIPAA","ISO27001, HIPAA"
+VND00068,Enterprise Inc,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00069,Future Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),None
+VND00070,TechFlow Corp,True,CONTRACT_EXPIRED_ACTIVE_ACCESS,MEDIUM,Vendor contract expired but may still have data access,None
+VND00071,Analytics Pro Group,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 66/100 elevated - increased monitoring recommended,None
+VND00072,Future Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, PCI-DSS","FedRAMP, PCI-DSS"
+VND00073,Global Innovations,True,CONTRACT_EXPIRED_ACTIVE_ACCESS,MEDIUM,Vendor contract expired but may still have data access,None
+VND00074,CloudSync Solutions,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,SOC2
+VND00075,TechFlow Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00076,SecureNet Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00077,SecureNet Services,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00078,Future Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00079,TechFlow Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00080,CloudSync Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 95/100 exceeds acceptable threshold (80),"HIPAA, GDPR"
+VND00081,Enterprise Corp,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,GDPR
+VND00082,Digital Corp,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,SOC2
+VND00083,Global Corp,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, HIPAA","PCI-DSS, HIPAA"
+VND00084,CloudSync Innovations,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 78/100 elevated - increased monitoring recommended,None
+VND00085,Analytics Pro Partners,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00086,Analytics Pro Partners,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (HIPAA, GDPR) for vendor with sensitive data access","HIPAA, GDPR"
+VND00087,Global Services,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (HIPAA, SOC2) for vendor with sensitive data access","HIPAA, SOC2"
+VND00088,Enterprise Technologies,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 90/100 exceeds acceptable threshold (80),HIPAA
+VND00089,Smart Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 95/100 exceeds acceptable threshold (80),None
+VND00090,Digital Solutions,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (SOC2) for vendor with sensitive data access,SOC2
+VND00091,Global Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00092,CloudSync Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),HIPAA
+VND00093,Enterprise Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 91/100 exceeds acceptable threshold (80),FedRAMP
+VND00094,SecureNet Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 97/100 exceeds acceptable threshold (80),FedRAMP
+VND00095,SecureNet Systems,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00096,Digital Technologies,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,PCI-DSS
+VND00097,CloudSync Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00098,Global Ltd,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00099,TechFlow Technologies,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (FedRAMP) for vendor with sensitive data access,FedRAMP
+VND00100,DataVault Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00101,CloudSync Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 83/100 exceeds acceptable threshold (80),SOC2
+VND00102,Digital Systems,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (PCI-DSS) for vendor with sensitive data access,PCI-DSS
+VND00103,TechFlow Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00104,Digital Services,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,"PCI-DSS, FedRAMP"
+VND00105,Smart Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00106,DataVault Ltd,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Financial_Data access,None
+VND00107,Analytics Pro Innovations,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,HIPAA
+VND00108,TechFlow Partners,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00109,Global Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00110,TechFlow Ltd,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00111,Future Solutions,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,PCI-DSS
+VND00112,DataVault Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),None
+VND00113,Future Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00114,Global Ltd,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 73/100 elevated - increased monitoring recommended,None
+VND00115,TechFlow Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00116,TechFlow Innovations,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00117,TechFlow Services,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00118,Enterprise Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00119,CloudSync Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),FedRAMP
+VND00120,Smart Solutions,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00121,Enterprise Ltd,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00122,Smart Partners,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (PCI-DSS) for vendor with sensitive data access,PCI-DSS
+VND00123,DataVault Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 83/100 exceeds acceptable threshold (80),None
+VND00124,TechFlow Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00125,Enterprise Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00126,SecureNet Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 97/100 exceeds acceptable threshold (80),FedRAMP
+VND00127,CloudSync Innovations,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00128,Future Inc,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00129,Digital Ltd,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00130,Future Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 94/100 exceeds acceptable threshold (80),ISO27001
+VND00131,Global Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 97/100 exceeds acceptable threshold (80),PCI-DSS
+VND00132,Digital Ltd,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,ISO27001
+VND00133,Analytics Pro Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 84/100 exceeds acceptable threshold (80),None
+VND00134,Global Partners,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, SOC2","PCI-DSS, SOC2"
+VND00135,Global Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: GDPR,GDPR
+VND00136,Global Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, HIPAA","FedRAMP, HIPAA"
+VND00137,SecureNet Partners,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 79/100 elevated - increased monitoring recommended,None
+VND00138,Smart Inc,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,PCI-DSS
+VND00139,Future Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 92/100 exceeds acceptable threshold (80),None
+VND00140,Future Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 82/100 exceeds acceptable threshold (80),None
+VND00141,CloudSync Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00142,SecureNet Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 89/100 exceeds acceptable threshold (80),None
+VND00143,Enterprise Partners,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (PCI-DSS, ISO27001, SOC2) for vendor with sensitive data access","PCI-DSS, ISO27001, SOC2"
+VND00144,TechFlow Technologies,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00145,DataVault Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00146,Future Ltd,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (FedRAMP, SOC2) for vendor with sensitive data access","FedRAMP, SOC2"
+VND00147,Smart Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00148,Future Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00149,TechFlow Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 84/100 exceeds acceptable threshold (80),GDPR
+VND00150,SecureNet Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 92/100 exceeds acceptable threshold (80),None
+VND00151,Global Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00152,CloudSync Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00153,Digital Ltd,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00154,Global Services,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (GDPR) for vendor with sensitive data access,GDPR
+VND00155,Digital Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 86/100 exceeds acceptable threshold (80),None
+VND00156,CloudSync Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: GDPR,GDPR
+VND00157,TechFlow Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00158,Future Partners,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 79/100 elevated - increased monitoring recommended,None
+VND00159,Global Technologies,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00160,Enterprise Corp,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 73/100 elevated - increased monitoring recommended,None
+VND00161,Enterprise Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00162,DataVault Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00163,DataVault Partners,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00164,Future Services,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, FedRAMP","PCI-DSS, FedRAMP"
+VND00165,Future Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 91/100 exceeds acceptable threshold (80),None
+VND00166,CloudSync Partners,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 77/100 elevated - increased monitoring recommended,None
+VND00167,DataVault Partners,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00168,Future Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00169,Analytics Pro Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, GDPR","PCI-DSS, GDPR"
+VND00170,Global Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00171,SecureNet Technologies,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (SOC2) for vendor with sensitive data access,SOC2
+VND00172,DataVault Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 86/100 exceeds acceptable threshold (80),PCI-DSS
+VND00173,Smart Ltd,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,GDPR
+VND00174,Global Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00175,Analytics Pro Inc,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Financial_Data access,"PCI-DSS, FedRAMP"
+VND00176,CloudSync Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 82/100 exceeds acceptable threshold (80),"ISO27001, FedRAMP"
+VND00177,Enterprise Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 83/100 exceeds acceptable threshold (80),"GDPR, HIPAA"
+VND00178,Digital Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00179,CloudSync Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),None
+VND00180,TechFlow Technologies,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (PCI-DSS) for vendor with sensitive data access,PCI-DSS
+VND00181,Global Group,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,FedRAMP
+VND00182,Future Partners,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,"ISO27001, FedRAMP"
+VND00183,Global Innovations,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (FedRAMP) for vendor with sensitive data access,FedRAMP
+VND00184,Digital Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 90/100 exceeds acceptable threshold (80),"SOC2, HIPAA"
+VND00185,SecureNet Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 96/100 exceeds acceptable threshold (80),None
+VND00186,Smart Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00187,Smart Services,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (GDPR, SOC2) for vendor with sensitive data access","GDPR, SOC2"
+VND00188,SecureNet Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00189,Global Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: GDPR,GDPR
+VND00190,SecureNet Innovations,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,FedRAMP
+VND00191,Digital Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00192,Digital Systems,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 86/100 exceeds acceptable threshold (80),None
+VND00193,DataVault Group,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00194,Future Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),None
+VND00195,DataVault Inc,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00196,CloudSync Solutions,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 85/100 exceeds acceptable threshold (80),None
+VND00197,CloudSync Inc,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00198,DataVault Innovations,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00199,SecureNet Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00200,SecureNet Technologies,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00201,Smart Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00202,DataVault Partners,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: SOC2, ISO27001, FedRAMP","SOC2, ISO27001, FedRAMP"
+VND00203,DataVault Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00204,SecureNet Group,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00205,Analytics Pro Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 98/100 exceeds acceptable threshold (80),None
+VND00206,SecureNet Solutions,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (FedRAMP) for vendor with sensitive data access,FedRAMP
+VND00207,Smart Systems,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,ISO27001
+VND00208,TechFlow Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00209,DataVault Innovations,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,GDPR
+VND00210,SecureNet Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,SOC2
+VND00211,Enterprise Innovations,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00212,Analytics Pro Inc,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00213,TechFlow Services,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00214,Analytics Pro Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 86/100 exceeds acceptable threshold (80),"ISO27001, HIPAA"
+VND00215,Smart Technologies,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 96/100 exceeds acceptable threshold (80),SOC2
+VND00216,DataVault Corp,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00217,TechFlow Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00218,CloudSync Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00219,Future Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 96/100 exceeds acceptable threshold (80),None
+VND00220,SecureNet Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 98/100 exceeds acceptable threshold (80),FedRAMP
+VND00221,Digital Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00222,Digital Group,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (FedRAMP) for vendor with sensitive data access,FedRAMP
+VND00223,Analytics Pro Ltd,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00224,Smart Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00225,CloudSync Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 86/100 exceeds acceptable threshold (80),FedRAMP
+VND00226,Enterprise Inc,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, GDPR","PCI-DSS, GDPR"
+VND00227,Analytics Pro Partners,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: PCI-DSS, SOC2","PCI-DSS, SOC2"
+VND00228,CloudSync Services,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,SOC2
+VND00229,Analytics Pro Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 84/100 exceeds acceptable threshold (80),None
+VND00230,DataVault Corp,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 66/100 elevated - increased monitoring recommended,None
+VND00231,Digital Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 89/100 exceeds acceptable threshold (80),PCI-DSS
+VND00232,Digital Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00233,CloudSync Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00234,Global Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00235,Enterprise Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00236,Smart Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 88/100 exceeds acceptable threshold (80),"PCI-DSS, SOC2"
+VND00237,Analytics Pro Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 90/100 exceeds acceptable threshold (80),None
+VND00238,SecureNet Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00239,TechFlow Technologies,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 80/100 elevated - increased monitoring recommended,None
+VND00240,SecureNet Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00241,Future Innovations,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00242,Global Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 95/100 exceeds acceptable threshold (80),SOC2
+VND00243,DataVault Partners,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00244,Global Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00245,CloudSync Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 85/100 exceeds acceptable threshold (80),"HIPAA, ISO27001"
+VND00246,Analytics Pro Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00247,SecureNet Technologies,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00248,Future Technologies,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00249,Digital Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00250,Global Partners,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00251,CloudSync Ltd,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (FedRAMP) for vendor with sensitive data access,FedRAMP
+VND00252,Enterprise Systems,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 86/100 exceeds acceptable threshold (80),GDPR
+VND00253,CloudSync Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00254,Future Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: GDPR,GDPR
+VND00255,Global Innovations,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (ISO27001) for vendor with sensitive data access,ISO27001
+VND00256,Future Solutions,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 96/100 exceeds acceptable threshold (80),None
+VND00257,SecureNet Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00258,Analytics Pro Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 92/100 exceeds acceptable threshold (80),FedRAMP
+VND00259,Analytics Pro Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,GDPR
+VND00260,Enterprise Services,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Financial_Data access,HIPAA
+VND00261,Global Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00262,CloudSync Systems,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00263,Global Solutions,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),FedRAMP
+VND00264,Analytics Pro Services,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,"HIPAA, FedRAMP"
+VND00265,Smart Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00266,Smart Services,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00267,Future Partners,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00268,SecureNet Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00269,Digital Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 90/100 exceeds acceptable threshold (80),ISO27001
+VND00270,Global Corp,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00271,Smart Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00272,Analytics Pro Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00273,DataVault Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00274,SecureNet Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 89/100 exceeds acceptable threshold (80),None
+VND00275,DataVault Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: SOC2,SOC2
+VND00276,DataVault Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00277,TechFlow Inc,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (GDPR) for vendor with sensitive data access,GDPR
+VND00278,SecureNet Services,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00279,Global Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00280,Global Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 98/100 exceeds acceptable threshold (80),None
+VND00281,Analytics Pro Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00282,Smart Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 95/100 exceeds acceptable threshold (80),PCI-DSS
+VND00283,Analytics Pro Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00284,Global Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00285,DataVault Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00286,CloudSync Technologies,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,HIPAA
+VND00287,Global Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: GDPR, HIPAA","GDPR, HIPAA"
+VND00288,Analytics Pro Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00289,Future Group,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 66/100 elevated - increased monitoring recommended,None
+VND00290,Future Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00291,Global Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00292,DataVault Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00293,Smart Services,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (PCI-DSS) for vendor with sensitive data access,PCI-DSS
+VND00294,Enterprise Ltd,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 89/100 exceeds acceptable threshold (80),ISO27001
+VND00295,DataVault Services,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,ISO27001
+VND00296,CloudSync Inc,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00297,Enterprise Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00298,Smart Technologies,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00299,SecureNet Innovations,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00300,Digital Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00301,DataVault Group,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00302,SecureNet Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00303,Global Partners,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00304,Smart Partners,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 94/100 exceeds acceptable threshold (80),None
+VND00305,TechFlow Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00306,Analytics Pro Solutions,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 84/100 exceeds acceptable threshold (80),None
+VND00307,SecureNet Partners,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: HIPAA, PCI-DSS","HIPAA, PCI-DSS"
+VND00308,TechFlow Corp,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Financial_Data access,None
+VND00309,CloudSync Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 83/100 exceeds acceptable threshold (80),ISO27001
+VND00310,Analytics Pro Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00311,Future Technologies,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00312,Enterprise Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00313,CloudSync Solutions,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,PCI-DSS
+VND00314,Smart Technologies,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 87/100 exceeds acceptable threshold (80),None
+VND00315,Smart Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00316,CloudSync Solutions,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None
+VND00317,SecureNet Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00318,Digital Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00319,SecureNet Group,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (PCI-DSS) for vendor with sensitive data access,PCI-DSS
+VND00320,Global Solutions,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00321,Enterprise Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00322,SecureNet Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),FedRAMP
+VND00323,Future Innovations,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has All_Systems access,None
+VND00324,Enterprise Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00325,SecureNet Partners,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 79/100 elevated - increased monitoring recommended,None
+VND00326,TechFlow Ltd,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00327,Future Systems,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,ISO27001
+VND00328,CloudSync Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 88/100 exceeds acceptable threshold (80),"ISO27001, GDPR"
+VND00329,CloudSync Services,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00330,Digital Innovations,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 78/100 elevated - increased monitoring recommended,None
+VND00331,Analytics Pro Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00332,SecureNet Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00333,Enterprise Solutions,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,HIPAA
+VND00334,Enterprise Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 91/100 exceeds acceptable threshold (80),None
+VND00335,CloudSync Partners,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00336,CloudSync Ltd,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00337,DataVault Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 98/100 exceeds acceptable threshold (80),PCI-DSS
+VND00338,DataVault Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00339,Analytics Pro Inc,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00340,Digital Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 81/100 exceeds acceptable threshold (80),HIPAA
+VND00341,SecureNet Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00342,TechFlow Inc,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 91/100 exceeds acceptable threshold (80),None
+VND00343,Smart Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, HIPAA","FedRAMP, HIPAA"
+VND00344,Global Inc,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,None
+VND00345,TechFlow Solutions,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),None
+VND00346,TechFlow Services,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 95/100 exceeds acceptable threshold (80),None
+VND00347,Global Systems,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 92/100 exceeds acceptable threshold (80),HIPAA
+VND00348,Analytics Pro Group,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, SOC2","FedRAMP, SOC2"
+VND00349,TechFlow Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00350,SecureNet Services,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00351,Enterprise Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: GDPR, ISO27001","GDPR, ISO27001"
+VND00352,CloudSync Systems,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,"HIPAA, ISO27001"
+VND00353,TechFlow Group,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00354,Future Corp,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00355,Analytics Pro Innovations,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00356,TechFlow Technologies,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 99/100 exceeds acceptable threshold (80),None
+VND00357,Analytics Pro Group,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,None
+VND00358,SecureNet Group,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,"FedRAMP, PCI-DSS"
+VND00359,CloudSync Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00360,DataVault Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, GDPR","FedRAMP, GDPR"
+VND00361,Digital Innovations,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,ISO27001
+VND00362,TechFlow Services,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00363,TechFlow Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00364,CloudSync Ltd,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00365,Enterprise Systems,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00366,TechFlow Inc,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00367,TechFlow Solutions,True,EXPIRED_CERTIFICATION,HIGH,"Certifications expired (GDPR, HIPAA) for vendor with sensitive data access","GDPR, HIPAA"
+VND00368,TechFlow Services,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 77/100 elevated - increased monitoring recommended,None
+VND00369,Future Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00370,DataVault Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: ISO27001, FedRAMP","ISO27001, FedRAMP"
+VND00371,TechFlow Group,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00372,Global Systems,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00373,Global Ltd,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, ISO27001","FedRAMP, ISO27001"
+VND00374,Enterprise Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: SOC2, FedRAMP, HIPAA","SOC2, FedRAMP, HIPAA"
+VND00375,TechFlow Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: FedRAMP,FedRAMP
+VND00376,CloudSync Technologies,True,VENDOR_UNDER_INVESTIGATION,CRITICAL,Vendor is currently under security investigation,FedRAMP
+VND00377,Future Inc,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has All_Systems access,None
+VND00378,Global Corp,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 92/100 exceeds acceptable threshold (80),None
+VND00379,TechFlow Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00380,Digital Inc,True,CONTRACT_EXPIRED_ACTIVE_ACCESS,MEDIUM,Vendor contract expired but may still have data access,None
+VND00381,Digital Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00382,CloudSync Technologies,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: FedRAMP, HIPAA","FedRAMP, HIPAA"
+VND00383,Digital Solutions,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,HIPAA
+VND00384,TechFlow Solutions,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00385,Enterprise Inc,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: PCI-DSS,PCI-DSS
+VND00386,Smart Ltd,True,ELEVATED_RISK_VENDOR,LOW,Vendor risk score 68/100 elevated - increased monitoring recommended,None
+VND00387,Global Services,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00388,TechFlow Technologies,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,ISO27001
+VND00389,CloudSync Innovations,True,RECENTLY_BREACHED_VENDOR,MEDIUM,Vendor had a breach in the last 12 months - requires enhanced monitoring,PCI-DSS
+VND00390,DataVault Group,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 84/100 exceeds acceptable threshold (80),GDPR
+VND00391,Global Services,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: HIPAA,HIPAA
+VND00392,Digital Innovations,True,HIGH_RISK_SCORE,HIGH,Vendor risk score 93/100 exceeds acceptable threshold (80),None
+VND00393,SecureNet Innovations,False,LOW_RISK_VENDOR,NONE,Vendor meets compliance and risk thresholds,None
+VND00394,Future Group,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: HIPAA, FedRAMP","HIPAA, FedRAMP"
+VND00395,CloudSync Innovations,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (HIPAA) for vendor with sensitive data access,HIPAA
+VND00396,Enterprise Solutions,True,EXPIRED_CERTIFICATION,MEDIUM,"Certification(s) expired: ISO27001, HIPAA","ISO27001, HIPAA"
+VND00397,Smart Systems,True,EXPIRED_CERTIFICATION,HIGH,Certifications expired (PCI-DSS) for vendor with sensitive data access,PCI-DSS
+VND00398,DataVault Corp,True,EXPIRED_CERTIFICATION,MEDIUM,Certification(s) expired: ISO27001,ISO27001
+VND00399,Analytics Pro Partners,True,BREACHED_VENDOR_HIGH_ACCESS,CRITICAL,Vendor had breach in last 12 months and has Customer_PII access,None

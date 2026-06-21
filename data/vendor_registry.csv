@@ -1,0 +1,401 @@
+vendor_id,vendor_name,vendor_type,contact_name,contact_email,compliance_certifications,data_access_scope,risk_score,breach_status,annual_spend,contract_end_date,last_audit_date
+VND00000,Enterprise Group,Data_Provider,Jacob Martin,jacob.martin@enterprisegroup.com,GDPR:2026-01-02|ISO27001:2027-04-19|SOC2:2025-12-20,Public_Data,12,No_Known_Breach,2725351,2027-12-13,2025-09-26
+VND00001,CloudSync Innovations,Hardware_Vendor,Kevin Meyer,kevin.meyer@cloudsyncinnovations.com,HIPAA:2026-01-22,Internal_Data,73,Under_Investigation,2647521,2026-08-28,2026-03-05
+VND00002,Global Ltd,Cloud_Provider,Steven He,steven.he@globalltd.com,FedRAMP:2025-12-22,Internal_Data,17,Historical_Breach,1047257,2026-04-20,2025-10-14
+VND00003,SecureNet Innovations,MSP,Timothy Bhat,timothy.bhat@securenetinnovations.com,PCI-DSS:2026-05-19|ISO27001:2026-11-12|GDPR:2026-01-30,Customer_PII,92,No_Known_Breach,967252,2027-03-11,2026-02-02
+VND00004,SecureNet Corp,Security_Vendor,Akshay Muller,akshay.muller@securenetcorp.com,SOC2:2026-05-30|GDPR:2027-01-18,Public_Data,31,No_Known_Breach,1395236,2027-10-17,2025-10-13
+VND00005,Analytics Pro Systems,Hardware_Vendor,Timothy Reilly,timothy.reilly@analyticsprosystems.com,ISO27001:2027-03-03|FedRAMP:2026-07-06,Internal_Data,55,Historical_Breach,2342563,2027-09-02,2025-12-12
+VND00006,Global Systems,Software_Vendor,Andrew Lim,andrew.lim@globalsystems.com,HIPAA:2026-11-25|GDPR:2026-04-10,Customer_PII,85,Recent_Breach_12mo,3727136,2026-06-27,2025-06-08
+VND00007,Digital Partners,Hardware_Vendor,Harsh Jang,harsh.jang@digitalpartners.com,HIPAA:2026-08-12,Public_Data,88,No_Known_Breach,2063793,2028-02-26,2025-10-20
+VND00008,Smart Corp,Contractor,Donald Kelly,donald.kelly@smartcorp.com,SOC2:2026-08-16,Internal_Data,40,No_Known_Breach,598863,2027-06-20,2025-12-02
+VND00009,Digital Partners,Software_Vendor,David Liu,david.liu@digitalpartners.com,HIPAA:2026-12-27|FedRAMP:2026-01-23|PCI-DSS:2026-03-17,Public_Data,10,No_Known_Breach,4654771,2027-04-12,2025-07-24
+VND00010,DataVault Group,Cloud_Provider,Daniel Gupta,daniel.gupta@datavaultgroup.com,FedRAMP:2026-06-17|PCI-DSS:2027-02-06|HIPAA:2026-12-01,Internal_Data,70,Under_Investigation,4758269,2028-01-10,2025-04-26
+VND00011,Analytics Pro Ltd,Contractor,Jeffrey Singh,jeffrey.singh@analyticsproltd.com,FedRAMP:2027-02-24|ISO27001:2026-12-18|SOC2:2026-11-16,Customer_PII,78,No_Known_Breach,1523395,2027-04-11,2026-02-22
+VND00012,DataVault Solutions,SaaS_Provider,Gary Muller,gary.muller@datavaultsolutions.com,FedRAMP:2026-12-25|ISO27001:2026-08-14,Public_Data,44,No_Known_Breach,1168991,2027-05-25,2026-02-09
+VND00013,Analytics Pro Corp,Data_Provider,Maria Jang,maria.jang@analyticsprocorp.com,ISO27001:2026-02-13|PCI-DSS:2026-10-04|HIPAA:2027-02-27,Public_Data,61,Recent_Breach_12mo,4002260,2027-03-30,2026-02-23
+VND00014,Future Systems,Software_Vendor,Leila Bernard,leila.bernard@futuresystems.com,PCI-DSS:2025-12-12|SOC2:2026-02-23,All_Systems,23,Recent_Breach_12mo,2008973,2027-05-13,2026-03-10
+VND00015,DataVault Solutions,SaaS_Provider,Paul Sharma,paul.sharma@datavaultsolutions.com,PCI-DSS:2027-01-25|SOC2:2025-11-24|ISO27001:2026-02-27,Financial_Data,62,No_Known_Breach,4528151,2027-04-03,2025-11-27
+VND00016,TechFlow Group,Hardware_Vendor,Deepika Lopez,deepika.lopez@techflowgroup.com,SOC2:2026-11-21|PCI-DSS:2026-07-28|ISO27001:2026-09-04,Public_Data,47,No_Known_Breach,188825,2027-08-10,2025-06-09
+VND00017,Global Ltd,Data_Provider,Ryan Jo,ryan.jo@globalltd.com,SOC2:2025-12-24|FedRAMP:2026-08-24|HIPAA:2025-11-20,Internal_Data,71,No_Known_Breach,2491569,2027-03-29,2025-10-02
+VND00018,TechFlow Inc,Hardware_Vendor,Diya Sharma,diya.sharma@techflowinc.com,FedRAMP:2026-11-04|PCI-DSS:2027-02-14,Public_Data,81,Historical_Breach,909366,2026-05-18,2025-05-19
+VND00019,CloudSync Technologies,Cloud_Provider,Paul Connor,paul.connor@cloudsynctechnologies.com,SOC2:2026-10-15|ISO27001:2026-01-06,Customer_PII,99,No_Known_Breach,3414735,2028-04-02,2025-09-11
+VND00020,Analytics Pro Systems,Hardware_Vendor,Yuki Becker,yuki.becker@analyticsprosystems.com,FedRAMP:2026-07-27,Public_Data,90,No_Known_Breach,4097284,2026-07-29,2026-01-04
+VND00021,CloudSync Systems,Consulting,Meera Kelly,meera.kelly@cloudsyncsystems.com,GDPR:2026-04-14,Customer_PII,81,No_Known_Breach,675326,2027-11-10,2025-08-24
+VND00022,Analytics Pro Services,Security_Vendor,Deepika Li,deepika.li@analyticsproservices.com,PCI-DSS:2026-05-13,Internal_Data,25,No_Known_Breach,2295209,2027-09-16,2025-05-16
+VND00023,Enterprise Corp,SaaS_Provider,Andrew Davis,andrew.davis@enterprisecorp.com,HIPAA:2026-09-02|FedRAMP:2027-03-17,Public_Data,14,No_Known_Breach,3419880,2027-04-03,2025-11-20
+VND00024,Analytics Pro Technologies,MSP,Elena Wilson,elena.wilson@analyticsprotechnologies.com,HIPAA:2025-11-02|GDPR:2026-05-01|ISO27001:2025-12-10,Internal_Data,34,Recent_Breach_12mo,494824,2027-05-07,2026-01-11
+VND00025,Smart Services,Contractor,Ryan Mishra,ryan.mishra@smartservices.com,FedRAMP:2026-05-06|HIPAA:2026-06-01,Internal_Data,75,No_Known_Breach,235803,2027-02-03,2025-12-20
+VND00026,CloudSync Corp,Security_Vendor,Mark Robinson,mark.robinson@cloudsynccorp.com,SOC2:2026-04-18|ISO27001:2027-04-04,Public_Data,29,No_Known_Breach,1837755,2027-03-29,2025-11-16
+VND00027,Analytics Pro Group,Contractor,Rajesh Singh,rajesh.singh@analyticsprogroup.com,ISO27001:2026-03-04|SOC2:2026-07-28,Customer_PII,99,No_Known_Breach,4335700,2027-04-15,2025-09-30
+VND00028,Digital Inc,Cloud_Provider,Riya Esposito,riya.esposito@digitalinc.com,SOC2:2025-12-02|GDPR:2026-02-12|FedRAMP:2026-08-06,Public_Data,67,No_Known_Breach,1752923,2027-03-10,2025-12-19
+VND00029,TechFlow Innovations,Security_Vendor,Rohan Durand,rohan.durand@techflowinnovations.com,FedRAMP:2026-11-14|PCI-DSS:2026-01-17|SOC2:2026-02-26,Internal_Data,77,Historical_Breach,832390,2028-03-17,2026-02-21
+VND00030,Analytics Pro Partners,MSP,Ronald White,ronald.white@analyticspropartners.com,GDPR:2025-11-20,Financial_Data,15,No_Known_Breach,4578303,2026-04-06,2025-07-02
+VND00031,Analytics Pro Innovations,SaaS_Provider,Daniel Sun,daniel.sun@analyticsproinnovations.com,PCI-DSS:2026-09-05,Financial_Data,26,No_Known_Breach,1912944,2026-11-24,2025-08-24
+VND00032,Future Group,Data_Provider,Anthony Chen,anthony.chen@futuregroup.com,HIPAA:2027-03-29,Public_Data,69,Historical_Breach,2802098,2026-11-18,2025-09-30
+VND00033,TechFlow Partners,Software_Vendor,Rohan Lewis,rohan.lewis@techflowpartners.com,HIPAA:2027-03-31|GDPR:2027-02-21|ISO27001:2026-02-12,Public_Data,70,Historical_Breach,316520,2027-05-27,2025-06-27
+VND00034,SecureNet Systems,Contractor,Sophia Jang,sophia.jang@securenetsystems.com,GDPR:2027-01-03,Internal_Data,68,No_Known_Breach,686202,2027-03-03,2025-08-10
+VND00035,Global Corp,Consulting,Maria Lopez,maria.lopez@globalcorp.com,PCI-DSS:2026-09-27,Internal_Data,89,No_Known_Breach,1691178,2026-04-17,2025-11-05
+VND00036,Future Inc,Software_Vendor,Michael Sullivan,michael.sullivan@futureinc.com,SOC2:2026-10-23|GDPR:2026-11-29,Customer_PII,49,Historical_Breach,897894,2027-07-30,2025-07-02
+VND00037,Future Corp,Security_Vendor,Nicholas Lee,nicholas.lee@futurecorp.com,ISO27001:2026-06-06|PCI-DSS:2026-04-16|HIPAA:2026-01-07,Financial_Data,18,No_Known_Breach,3205845,2026-12-27,2025-12-04
+VND00038,CloudSync Systems,Cloud_Provider,Jeffrey White,jeffrey.white@cloudsyncsystems.com,FedRAMP:2026-04-16|GDPR:2026-06-20,Public_Data,47,No_Known_Breach,4330278,2027-11-19,2025-04-29
+VND00039,Global Inc,Data_Provider,Richard Pillai,richard.pillai@globalinc.com,GDPR:2025-12-25|HIPAA:2026-11-14,Customer_PII,68,Recent_Breach_12mo,4563359,2026-09-14,2025-09-09
+VND00040,TechFlow Inc,Security_Vendor,Brian White,brian.white@techflowinc.com,FedRAMP:2027-01-25|PCI-DSS:2027-02-11,Internal_Data,82,Recent_Breach_12mo,592103,2027-03-15,2025-07-13
+VND00041,Smart Group,Data_Provider,Donald Esposito,donald.esposito@smartgroup.com,ISO27001:2026-04-14|PCI-DSS:2026-12-09,Customer_PII,61,No_Known_Breach,523819,2027-06-06,2025-07-10
+VND00042,Enterprise Systems,Hardware_Vendor,George Lee,george.lee@enterprisesystems.com,ISO27001:2026-02-07|SOC2:2027-01-10,Internal_Data,33,No_Known_Breach,1510428,2026-06-07,2026-03-11
+VND00043,DataVault Systems,MSP,Jacob Esposito,jacob.esposito@datavaultsystems.com,GDPR:2026-04-01|SOC2:2026-09-01,Customer_PII,30,No_Known_Breach,1914133,2026-12-05,2026-01-29
+VND00044,CloudSync Systems,Security_Vendor,Nicholas Wang,nicholas.wang@cloudsyncsystems.com,FedRAMP:2027-04-09,Internal_Data,64,Historical_Breach,685986,2027-09-28,2025-09-29
+VND00045,Digital Partners,MSP,Joshua Sharma,joshua.sharma@digitalpartners.com,SOC2:2027-03-01,Customer_PII,21,Recent_Breach_12mo,3586214,2027-01-29,2025-11-12
+VND00046,Enterprise Innovations,Consulting,Neha Singh,neha.singh@enterpriseinnovations.com,FedRAMP:2026-12-29|ISO27001:2026-02-11|PCI-DSS:2026-08-09,Public_Data,43,No_Known_Breach,830626,2026-07-12,2025-06-05
+VND00047,DataVault Solutions,MSP,Joseph Guo,joseph.guo@datavaultsolutions.com,HIPAA:2025-12-14|PCI-DSS:2026-08-22,Internal_Data,10,Historical_Breach,3729497,2026-09-22,2025-07-12
+VND00048,Global Systems,Security_Vendor,Anthony Rao,anthony.rao@globalsystems.com,HIPAA:2026-08-08,Customer_PII,44,Historical_Breach,3678608,2027-10-11,2025-12-15
+VND00049,DataVault Corp,Cloud_Provider,Priya Dubois,priya.dubois@datavaultcorp.com,ISO27001:2025-11-23|HIPAA:2026-02-21|FedRAMP:2026-11-08,Internal_Data,80,No_Known_Breach,4934244,2026-11-21,2026-02-04
+VND00050,Smart Group,Hardware_Vendor,Sophia Sharma,sophia.sharma@smartgroup.com,ISO27001:2026-04-22|HIPAA:2027-03-26,Public_Data,94,No_Known_Breach,3846583,2027-11-04,2026-02-25
+VND00051,Global Inc,SaaS_Provider,Nadia Guo,nadia.guo@globalinc.com,FedRAMP:2026-03-23|SOC2:2026-08-21,Internal_Data,57,No_Known_Breach,752003,2026-03-22,2025-12-09
+VND00052,Future Innovations,Consulting,Thomas Harris,thomas.harris@futureinnovations.com,HIPAA:2026-08-14|GDPR:2026-09-28|FedRAMP:2026-03-01,Internal_Data,49,No_Known_Breach,2608027,2026-10-14,2025-12-31
+VND00053,SecureNet Ltd,Cloud_Provider,Vikram Wagner,vikram.wagner@securenetltd.com,SOC2:2027-02-05,Customer_PII,59,No_Known_Breach,2167688,2026-11-13,2025-10-11
+VND00054,Global Systems,Consulting,Akshay Fischer,akshay.fischer@globalsystems.com,GDPR:2027-04-14|ISO27001:2026-03-09|PCI-DSS:2026-05-11,Customer_PII,61,Historical_Breach,251007,2026-03-28,2026-02-21
+VND00055,Enterprise Technologies,Consulting,Meera Miller,meera.miller@enterprisetechnologies.com,HIPAA:2027-03-10|GDPR:2025-11-16|FedRAMP:2027-01-08,Customer_PII,47,No_Known_Breach,4938840,2027-10-04,2025-10-15
+VND00056,Analytics Pro Solutions,Cloud_Provider,Sofia Thomas,sofia.thomas@analyticsprosolutions.com,HIPAA:2027-01-22|ISO27001:2025-10-26,Customer_PII,33,Recent_Breach_12mo,3621424,2027-11-15,2025-06-04
+VND00057,Analytics Pro Services,Contractor,Isha Rizzo,isha.rizzo@analyticsproservices.com,HIPAA:2026-10-13|PCI-DSS:2026-10-10|ISO27001:2026-03-23,Customer_PII,95,Historical_Breach,4104696,2027-12-18,2025-04-27
+VND00058,DataVault Technologies,Consulting,Aditya Petit,aditya.petit@datavaulttechnologies.com,FedRAMP:2026-02-27|PCI-DSS:2026-05-10,Customer_PII,87,Historical_Breach,4368684,2027-03-04,2025-05-10
+VND00059,Global Ltd,Software_Vendor,Sofia Hwang,sofia.hwang@globalltd.com,ISO27001:2025-10-28|FedRAMP:2026-03-10,Customer_PII,34,No_Known_Breach,1350151,2027-08-05,2025-12-12
+VND00060,Enterprise Innovations,Data_Provider,Robert Patel,robert.patel@enterpriseinnovations.com,SOC2:2026-07-07|ISO27001:2026-04-02|FedRAMP:2026-12-19,Internal_Data,69,Historical_Breach,1215131,2026-06-30,2026-01-01
+VND00061,SecureNet Solutions,SaaS_Provider,Leila Gonzalez,leila.gonzalez@securenetsolutions.com,SOC2:2026-01-09,Customer_PII,74,Historical_Breach,2646934,2026-07-18,2025-11-01
+VND00062,DataVault Corp,Hardware_Vendor,Mark Pillai,mark.pillai@datavaultcorp.com,HIPAA:2026-05-17,Customer_PII,54,Historical_Breach,1255293,2027-07-17,2025-07-25
+VND00063,SecureNet Partners,SaaS_Provider,Maria Davis,maria.davis@securenetpartners.com,PCI-DSS:2027-03-07|HIPAA:2026-08-02|FedRAMP:2025-10-23,Internal_Data,14,Under_Investigation,3569885,2027-05-23,2025-06-09
+VND00064,Enterprise Solutions,MSP,Elena Kang,elena.kang@enterprisesolutions.com,FedRAMP:2027-03-28|GDPR:2026-09-27|HIPAA:2026-09-15,Financial_Data,28,No_Known_Breach,2397655,2026-10-27,2025-06-28
+VND00065,TechFlow Partners,Hardware_Vendor,Maria Jackson,maria.jackson@techflowpartners.com,GDPR:2027-02-15|HIPAA:2026-02-17|FedRAMP:2026-03-09,Internal_Data,77,No_Known_Breach,4586515,2027-08-15,2025-05-22
+VND00066,SecureNet Innovations,Data_Provider,Raja Jones,raja.jones@securenetinnovations.com,GDPR:2026-08-26,Public_Data,99,No_Known_Breach,265823,2027-01-30,2026-01-12
+VND00067,DataVault Inc,Cloud_Provider,Leila Schneider,leila.schneider@datavaultinc.com,ISO27001:2025-12-14|HIPAA:2025-12-16|FedRAMP:2026-07-07,Public_Data,49,Historical_Breach,4814882,2027-05-14,2025-04-24
+VND00068,Enterprise Inc,Consulting,Matthew Nair,matthew.nair@enterpriseinc.com,GDPR:2026-12-01|ISO27001:2026-04-29|SOC2:2027-04-13,Public_Data,37,No_Known_Breach,3820634,2026-12-19,2025-06-03
+VND00069,Future Services,Software_Vendor,Xiulan Quinn,xiulan.quinn@futureservices.com,SOC2:2026-07-30|ISO27001:2027-03-10,Internal_Data,87,Historical_Breach,4871055,2026-08-03,2026-02-26
+VND00070,TechFlow Corp,Hardware_Vendor,James Hwang,james.hwang@techflowcorp.com,PCI-DSS:2026-06-08|ISO27001:2026-12-18,Internal_Data,15,No_Known_Breach,4393070,2026-03-22,2025-05-05
+VND00071,Analytics Pro Group,Data_Provider,Riya Colombo,riya.colombo@analyticsprogroup.com,PCI-DSS:2026-07-03,Customer_PII,66,No_Known_Breach,800085,2028-03-23,2026-02-24
+VND00072,Future Ltd,SaaS_Provider,Elena Jackson,elena.jackson@futureltd.com,FedRAMP:2025-11-21|SOC2:2026-08-08|PCI-DSS:2026-01-28,Internal_Data,24,No_Known_Breach,2784609,2027-12-10,2025-05-03
+VND00073,Global Innovations,MSP,Rohan Wagner,rohan.wagner@globalinnovations.com,GDPR:2026-11-27,Customer_PII,59,No_Known_Breach,3922087,2026-04-02,2025-06-20
+VND00074,CloudSync Solutions,Security_Vendor,Sophia Kim,sophia.kim@cloudsyncsolutions.com,SOC2:2026-02-26|HIPAA:2026-06-25|GDPR:2026-09-23,Internal_Data,74,Recent_Breach_12mo,2832391,2026-04-25,2025-09-04
+VND00075,TechFlow Solutions,MSP,Sophia Chen,sophia.chen@techflowsolutions.com,PCI-DSS:2027-02-07|ISO27001:2027-01-18|HIPAA:2026-05-03,Customer_PII,61,Historical_Breach,1808041,2026-07-25,2025-08-09
+VND00076,SecureNet Technologies,Security_Vendor,Amara Verma,amara.verma@securenettechnologies.com,ISO27001:2026-07-15,Internal_Data,71,Recent_Breach_12mo,3524657,2026-09-16,2025-05-23
+VND00077,SecureNet Services,MSP,Rohan Hoffmann,rohan.hoffmann@securenetservices.com,HIPAA:2026-02-04|PCI-DSS:2026-09-20,Internal_Data,19,No_Known_Breach,1761022,2026-12-28,2026-02-22
+VND00078,Future Systems,SaaS_Provider,Akshay Jang,akshay.jang@futuresystems.com,HIPAA:2027-01-23,Financial_Data,16,No_Known_Breach,333966,2027-05-16,2026-02-11
+VND00079,TechFlow Ltd,Contractor,Meera Clark,meera.clark@techflowltd.com,FedRAMP:2026-12-16|SOC2:2026-10-02,Public_Data,25,No_Known_Breach,4594902,2026-06-04,2026-01-24
+VND00080,CloudSync Group,SaaS_Provider,Larry Martinez,larry.martinez@cloudsyncgroup.com,HIPAA:2025-12-29|GDPR:2026-02-23,Internal_Data,95,No_Known_Breach,4594324,2027-03-11,2026-02-11
+VND00081,Enterprise Corp,Consulting,Varun Chen,varun.chen@enterprisecorp.com,GDPR:2025-10-22,Public_Data,80,Recent_Breach_12mo,4333817,2027-07-06,2026-01-15
+VND00082,Digital Corp,Consulting,Stephen Martin,stephen.martin@digitalcorp.com,SOC2:2025-11-05|HIPAA:2027-03-07,Internal_Data,52,Recent_Breach_12mo,4583574,2026-09-06,2026-03-01
+VND00083,Global Corp,Consulting,Meera Han,meera.han@globalcorp.com,PCI-DSS:2026-03-16|HIPAA:2026-02-04,Internal_Data,76,No_Known_Breach,23677,2027-06-01,2025-06-06
+VND00084,CloudSync Innovations,Consulting,Yuki Martin,yuki.martin@cloudsyncinnovations.com,HIPAA:2027-04-09,All_Systems,78,No_Known_Breach,4721996,2026-07-16,2025-05-23
+VND00085,Analytics Pro Partners,Hardware_Vendor,Matthew Weber,matthew.weber@analyticspropartners.com,FedRAMP:2025-12-31|PCI-DSS:2027-04-01,Public_Data,54,No_Known_Breach,3812407,2027-11-28,2026-03-02
+VND00086,Analytics Pro Partners,Consulting,Thomas Petit,thomas.petit@analyticspropartners.com,ISO27001:2026-11-06|HIPAA:2026-01-14|GDPR:2026-04-02,Customer_PII,28,No_Known_Breach,3103402,2027-02-15,2026-02-04
+VND00087,Global Services,Security_Vendor,Raja Petit,raja.petit@globalservices.com,HIPAA:2025-11-01|SOC2:2025-11-09,Financial_Data,42,No_Known_Breach,2935046,2027-02-16,2026-02-16
+VND00088,Enterprise Technologies,Security_Vendor,Ryan Esposito,ryan.esposito@enterprisetechnologies.com,SOC2:2027-03-27|HIPAA:2026-02-22,Internal_Data,90,Historical_Breach,2762033,2026-04-14,2025-05-22
+VND00089,Smart Corp,Cloud_Provider,Andrew Jo,andrew.jo@smartcorp.com,ISO27001:2026-10-07|PCI-DSS:2027-01-28,Internal_Data,95,No_Known_Breach,3662511,2028-02-18,2026-01-13
+VND00090,Digital Solutions,MSP,Anthony Reddy,anthony.reddy@digitalsolutions.com,GDPR:2026-12-04|SOC2:2026-03-17|ISO27001:2026-12-02,Customer_PII,49,No_Known_Breach,763129,2027-01-15,2025-09-09
+VND00091,Global Services,Cloud_Provider,Joshua Liu,joshua.liu@globalservices.com,ISO27001:2026-05-29,Internal_Data,46,No_Known_Breach,2572936,2027-05-08,2025-09-28
+VND00092,CloudSync Innovations,MSP,Donald Bianchi,donald.bianchi@cloudsyncinnovations.com,HIPAA:2026-03-29|GDPR:2026-12-09,Internal_Data,87,No_Known_Breach,934412,2027-07-28,2025-10-09
+VND00093,Enterprise Ltd,Hardware_Vendor,Jeffrey Iyer,jeffrey.iyer@enterpriseltd.com,FedRAMP:2026-01-19,Customer_PII,91,No_Known_Breach,2742116,2026-07-18,2025-06-24
+VND00094,SecureNet Group,MSP,Aditya Williams,aditya.williams@securenetgroup.com,FedRAMP:2026-03-18,Internal_Data,97,No_Known_Breach,3826675,2027-02-13,2025-10-10
+VND00095,SecureNet Systems,Contractor,Jonathan Hwang,jonathan.hwang@securenetsystems.com,SOC2:2027-02-09,Public_Data,95,Under_Investigation,486184,2026-12-05,2025-04-27
+VND00096,Digital Technologies,Data_Provider,Nadia Ghosh,nadia.ghosh@digitaltechnologies.com,PCI-DSS:2026-01-30,Internal_Data,37,Under_Investigation,2279157,2026-11-09,2025-07-04
+VND00097,CloudSync Solutions,Cloud_Provider,Rohan Miller,rohan.miller@cloudsyncsolutions.com,FedRAMP:2026-10-02|PCI-DSS:2026-07-02|GDPR:2027-04-19,Public_Data,55,Historical_Breach,4037116,2027-02-21,2026-02-09
+VND00098,Global Ltd,Hardware_Vendor,Priya Robinson,priya.robinson@globalltd.com,FedRAMP:2027-02-28|GDPR:2027-02-15,Customer_PII,83,Recent_Breach_12mo,1374403,2026-06-21,2026-03-20
+VND00099,TechFlow Technologies,Data_Provider,Aditya Menon,aditya.menon@techflowtechnologies.com,HIPAA:2026-10-11|SOC2:2027-01-17|FedRAMP:2026-01-17,Financial_Data,49,No_Known_Breach,15082,2026-05-20,2025-10-07
+VND00100,DataVault Ltd,Data_Provider,Jonathan Jo,jonathan.jo@datavaultltd.com,GDPR:2026-06-25,Financial_Data,39,No_Known_Breach,4561649,2027-01-12,2025-12-23
+VND00101,CloudSync Services,Data_Provider,Edward Garcia,edward.garcia@cloudsyncservices.com,PCI-DSS:2026-08-15|GDPR:2026-10-15|SOC2:2025-12-07,Customer_PII,83,No_Known_Breach,812656,2026-10-23,2026-01-25
+VND00102,Digital Systems,Hardware_Vendor,Shruti Burke,shruti.burke@digitalsystems.com,PCI-DSS:2026-01-02,Customer_PII,71,No_Known_Breach,2286865,2026-10-09,2025-10-10
+VND00103,TechFlow Corp,SaaS_Provider,Amitabh Jang,amitabh.jang@techflowcorp.com,PCI-DSS:2025-12-12|SOC2:2026-07-24|HIPAA:2026-04-29,Internal_Data,11,No_Known_Breach,933097,2028-02-20,2025-07-11
+VND00104,Digital Services,Contractor,Rohan Schmidt,rohan.schmidt@digitalservices.com,PCI-DSS:2025-12-07|FedRAMP:2026-04-19,Public_Data,64,Recent_Breach_12mo,2475286,2028-04-04,2025-12-13
+VND00105,Smart Ltd,Software_Vendor,Akshay Bianchi,akshay.bianchi@smartltd.com,PCI-DSS:2026-07-07|HIPAA:2026-08-04|FedRAMP:2025-10-22,Internal_Data,60,No_Known_Breach,2539790,2026-07-02,2025-08-15
+VND00106,DataVault Ltd,Software_Vendor,Kenneth Kang,kenneth.kang@datavaultltd.com,HIPAA:2026-12-09|GDPR:2026-05-03,Financial_Data,40,Recent_Breach_12mo,4382512,2026-05-10,2026-03-11
+VND00107,Analytics Pro Innovations,Software_Vendor,Nicholas Brown,nicholas.brown@analyticsproinnovations.com,FedRAMP:2027-02-14|HIPAA:2025-12-17,Customer_PII,94,Recent_Breach_12mo,61507,2026-11-30,2025-06-24
+VND00108,TechFlow Partners,Software_Vendor,Aditya Johnson,aditya.johnson@techflowpartners.com,HIPAA:2026-01-01,Internal_Data,52,Historical_Breach,4162278,2027-06-28,2025-09-15
+VND00109,Global Inc,Security_Vendor,Zainab Weber,zainab.weber@globalinc.com,ISO27001:2026-04-13|PCI-DSS:2026-06-24,Internal_Data,65,No_Known_Breach,4293732,2027-12-12,2025-08-26
+VND00110,TechFlow Ltd,SaaS_Provider,Joshua Romano,joshua.romano@techflowltd.com,GDPR:2026-09-30|FedRAMP:2027-02-27|HIPAA:2027-04-17,Customer_PII,97,Recent_Breach_12mo,2235194,2027-07-07,2026-01-14
+VND00111,Future Solutions,Cloud_Provider,Robert Liu,robert.liu@futuresolutions.com,PCI-DSS:2026-03-26,Customer_PII,81,Recent_Breach_12mo,646606,2027-09-17,2026-01-05
+VND00112,DataVault Inc,Data_Provider,William Chen,william.chen@datavaultinc.com,ISO27001:2026-09-15,Internal_Data,87,No_Known_Breach,1412112,2026-04-19,2026-03-05
+VND00113,Future Systems,Consulting,Rajesh Huang,rajesh.huang@futuresystems.com,FedRAMP:2026-06-05|HIPAA:2026-01-28,Public_Data,25,No_Known_Breach,529145,2026-08-26,2025-12-30
+VND00114,Global Ltd,Cloud_Provider,Varun Ferrari,varun.ferrari@globalltd.com,FedRAMP:2026-06-08|ISO27001:2026-12-07,Financial_Data,73,Historical_Breach,237910,2027-11-25,2026-02-23
+VND00115,TechFlow Corp,SaaS_Provider,David Wagner,david.wagner@techflowcorp.com,FedRAMP:2025-12-25|GDPR:2027-02-15,Public_Data,52,Historical_Breach,1042906,2027-01-08,2026-03-02
+VND00116,TechFlow Innovations,SaaS_Provider,David Hernandez,david.hernandez@techflowinnovations.com,HIPAA:2027-03-05,Internal_Data,57,Under_Investigation,4430757,2028-03-10,2025-04-25
+VND00117,TechFlow Services,Security_Vendor,Larry Hernandez,larry.hernandez@techflowservices.com,HIPAA:2025-12-20|PCI-DSS:2026-05-16|SOC2:2026-08-05,Customer_PII,36,No_Known_Breach,2721995,2028-04-07,2025-05-24
+VND00118,Enterprise Ltd,Data_Provider,Christopher Sharma,christopher.sharma@enterpriseltd.com,HIPAA:2026-03-23,Public_Data,15,Historical_Breach,1778302,2028-01-10,2026-01-09
+VND00119,CloudSync Innovations,Cloud_Provider,Jeffrey Bhat,jeffrey.bhat@cloudsyncinnovations.com,SOC2:2027-01-04|FedRAMP:2026-02-19|GDPR:2027-01-19,Financial_Data,87,Historical_Breach,2587748,2027-03-21,2025-08-26
+VND00120,Smart Solutions,SaaS_Provider,Sanjana Fischer,sanjana.fischer@smartsolutions.com,HIPAA:2026-12-17|PCI-DSS:2026-11-25,Public_Data,51,Under_Investigation,4818580,2026-07-07,2026-01-25
+VND00121,Enterprise Ltd,Hardware_Vendor,Edward Petit,edward.petit@enterpriseltd.com,FedRAMP:2027-03-23,Public_Data,41,Under_Investigation,3028853,2027-12-06,2025-12-01
+VND00122,Smart Partners,Contractor,Brian Lewis,brian.lewis@smartpartners.com,PCI-DSS:2025-12-02,Financial_Data,17,No_Known_Breach,708815,2027-09-05,2025-04-30
+VND00123,DataVault Services,Data_Provider,Harsh Iyer,harsh.iyer@datavaultservices.com,HIPAA:2026-11-17|SOC2:2027-01-04|GDPR:2027-02-17,Internal_Data,83,No_Known_Breach,1447420,2027-10-08,2025-09-23
+VND00124,TechFlow Technologies,SaaS_Provider,Ryan Singh,ryan.singh@techflowtechnologies.com,FedRAMP:2025-10-29,Internal_Data,37,No_Known_Breach,963734,2026-10-21,2025-10-11
+VND00125,Enterprise Services,Hardware_Vendor,David Mishra,david.mishra@enterpriseservices.com,PCI-DSS:2026-09-29|ISO27001:2026-11-17,Customer_PII,41,No_Known_Breach,463399,2026-09-27,2025-09-01
+VND00126,SecureNet Corp,Security_Vendor,Aisha Guo,aisha.guo@securenetcorp.com,PCI-DSS:2026-08-05|FedRAMP:2025-12-09,Public_Data,97,Historical_Breach,748129,2027-10-18,2026-01-01
+VND00127,CloudSync Innovations,Cloud_Provider,Diya Nair,diya.nair@cloudsyncinnovations.com,HIPAA:2026-12-19|ISO27001:2026-04-22,Customer_PII,59,Recent_Breach_12mo,2311431,2026-09-22,2025-07-29
+VND00128,Future Inc,Hardware_Vendor,Harsh Russo,harsh.russo@futureinc.com,HIPAA:2026-11-17|SOC2:2026-05-01,Customer_PII,34,No_Known_Breach,1031540,2027-01-03,2025-06-17
+VND00129,Digital Ltd,Contractor,Riya Sullivan,riya.sullivan@digitalltd.com,HIPAA:2025-12-29,Customer_PII,20,No_Known_Breach,333398,2027-12-03,2025-08-01
+VND00130,Future Innovations,Cloud_Provider,Yuki Davis,yuki.davis@futureinnovations.com,SOC2:2026-12-19|ISO27001:2026-02-06,Internal_Data,94,No_Known_Breach,2160697,2026-04-18,2025-11-11
+VND00131,Global Services,SaaS_Provider,James Lopez,james.lopez@globalservices.com,PCI-DSS:2026-01-19|SOC2:2026-08-29,Public_Data,97,No_Known_Breach,2695887,2027-02-02,2025-10-10
+VND00132,Digital Ltd,SaaS_Provider,Kevin Petit,kevin.petit@digitalltd.com,ISO27001:2025-11-14,Internal_Data,94,Under_Investigation,3214505,2026-03-21,2025-07-20
+VND00133,Analytics Pro Services,MSP,James Russo,james.russo@analyticsproservices.com,ISO27001:2026-11-02,Public_Data,84,Historical_Breach,803669,2027-12-19,2026-02-11
+VND00134,Global Partners,Software_Vendor,Robert Young,robert.young@globalpartners.com,FedRAMP:2027-01-05|PCI-DSS:2025-12-15|SOC2:2026-01-29,Public_Data,22,No_Known_Breach,1008028,2028-03-07,2026-03-13
+VND00135,Global Technologies,MSP,Michael Yang,michael.yang@globaltechnologies.com,GDPR:2026-02-24,Public_Data,43,Historical_Breach,2829160,2026-05-08,2026-03-10
+VND00136,Global Technologies,Cloud_Provider,David Williams,david.williams@globaltechnologies.com,FedRAMP:2026-03-02|HIPAA:2026-03-18|PCI-DSS:2027-01-06,All_Systems,67,Historical_Breach,4466922,2027-06-13,2025-05-12
+VND00137,SecureNet Partners,Consulting,Leila Rizzo,leila.rizzo@securenetpartners.com,FedRAMP:2026-04-22,Internal_Data,79,Historical_Breach,2980134,2026-11-18,2025-06-08
+VND00138,Smart Inc,Data_Provider,Daniel Sanchez,daniel.sanchez@smartinc.com,PCI-DSS:2026-02-17,Customer_PII,13,Recent_Breach_12mo,3680821,2027-04-08,2025-12-11
+VND00139,Future Ltd,Data_Provider,Neha Reilly,neha.reilly@futureltd.com,SOC2:2027-02-14,Internal_Data,92,No_Known_Breach,2413687,2027-07-30,2025-05-09
+VND00140,Future Partners,Consulting,Aisha Park,aisha.park@futurepartners.com,HIPAA:2026-05-28,Internal_Data,82,Recent_Breach_12mo,79300,2027-02-04,2025-06-08
+VND00141,CloudSync Group,Hardware_Vendor,Amara Thomas,amara.thomas@cloudsyncgroup.com,SOC2:2026-10-02|HIPAA:2026-09-29,Internal_Data,64,No_Known_Breach,1906842,2028-01-12,2025-11-14
+VND00142,SecureNet Corp,Consulting,Rajesh Bhat,rajesh.bhat@securenetcorp.com,GDPR:2027-02-13|FedRAMP:2026-10-29|PCI-DSS:2027-01-10,All_Systems,89,No_Known_Breach,3577200,2027-08-23,2025-08-28
+VND00143,Enterprise Partners,Consulting,Amitabh Thompson,amitabh.thompson@enterprisepartners.com,PCI-DSS:2025-11-03|ISO27001:2025-10-28|SOC2:2026-01-09,Financial_Data,74,No_Known_Breach,2569966,2026-10-31,2026-03-06
+VND00144,TechFlow Technologies,Software_Vendor,Mark White,mark.white@techflowtechnologies.com,PCI-DSS:2026-07-14|GDPR:2027-02-24,Public_Data,14,No_Known_Breach,1665474,2026-11-26,2025-12-04
+VND00145,DataVault Systems,Software_Vendor,Sophia Mishra,sophia.mishra@datavaultsystems.com,PCI-DSS:2026-03-10|HIPAA:2026-06-14|GDPR:2026-05-19,Internal_Data,51,No_Known_Breach,2934222,2027-06-14,2025-10-12
+VND00146,Future Ltd,MSP,Anthony Guo,anthony.guo@futureltd.com,FedRAMP:2025-12-24|SOC2:2025-11-30,Customer_PII,31,No_Known_Breach,2947883,2026-09-01,2026-03-18
+VND00147,Smart Ltd,SaaS_Provider,Arjun Meyer,arjun.meyer@smartltd.com,PCI-DSS:2027-01-06|SOC2:2026-09-04,Public_Data,28,No_Known_Breach,820995,2026-04-11,2026-01-10
+VND00148,Future Corp,Consulting,Arjun Kelly,arjun.kelly@futurecorp.com,SOC2:2026-05-11,Internal_Data,43,No_Known_Breach,1960087,2026-07-26,2025-09-14
+VND00149,TechFlow Ltd,Security_Vendor,George Quinn,george.quinn@techflowltd.com,GDPR:2025-12-04,Internal_Data,84,No_Known_Breach,3866676,2027-12-09,2026-03-19
+VND00150,SecureNet Services,Consulting,Ronald Davis,ronald.davis@securenetservices.com,FedRAMP:2026-11-19,Internal_Data,92,No_Known_Breach,1667774,2028-03-16,2026-02-01
+VND00151,Global Partners,Security_Vendor,Zainab Rizzo,zainab.rizzo@globalpartners.com,HIPAA:2026-07-25|SOC2:2026-06-05,Financial_Data,53,No_Known_Breach,2619047,2026-05-16,2025-11-16
+VND00152,CloudSync Solutions,Consulting,Jacob Sharma,jacob.sharma@cloudsyncsolutions.com,PCI-DSS:2026-07-10|FedRAMP:2027-03-10|SOC2:2026-03-13,Internal_Data,77,No_Known_Breach,4049287,2026-04-27,2025-07-26
+VND00153,Digital Ltd,Software_Vendor,Vikram Sharma,vikram.sharma@digitalltd.com,SOC2:2027-02-20|GDPR:2027-02-03|FedRAMP:2026-11-02,Internal_Data,14,Recent_Breach_12mo,4391167,2027-12-20,2025-10-14
+VND00154,Global Services,Consulting,Stephen Weber,stephen.weber@globalservices.com,FedRAMP:2026-11-26|SOC2:2027-02-27|GDPR:2026-02-07,Customer_PII,18,Historical_Breach,1825915,2027-04-17,2025-06-19
+VND00155,Digital Corp,Security_Vendor,Donald Ghosh,donald.ghosh@digitalcorp.com,SOC2:2026-10-20,Customer_PII,86,No_Known_Breach,1507052,2026-04-18,2025-09-29
+VND00156,CloudSync Systems,Data_Provider,William Lewis,william.lewis@cloudsyncsystems.com,FedRAMP:2026-09-16|GDPR:2026-03-17,Public_Data,66,No_Known_Breach,66752,2027-07-21,2025-12-26
+VND00157,TechFlow Technologies,SaaS_Provider,James Romano,james.romano@techflowtechnologies.com,FedRAMP:2027-03-10|GDPR:2026-08-10|SOC2:2026-03-15,Internal_Data,35,No_Known_Breach,4022943,2027-11-16,2025-07-22
+VND00158,Future Partners,Data_Provider,Joseph Liu,joseph.liu@futurepartners.com,GDPR:2027-03-05,Customer_PII,79,Historical_Breach,4161194,2027-04-20,2025-07-31
+VND00159,Global Technologies,SaaS_Provider,Eric Weber,eric.weber@globaltechnologies.com,FedRAMP:2027-04-12,Customer_PII,89,Under_Investigation,3111049,2028-01-11,2026-02-10
+VND00160,Enterprise Corp,Consulting,Maria Nair,maria.nair@enterprisecorp.com,FedRAMP:2026-05-15|HIPAA:2026-10-09,Financial_Data,73,No_Known_Breach,1145344,2026-05-12,2026-02-13
+VND00161,Enterprise Inc,Contractor,Harsh Colombo,harsh.colombo@enterpriseinc.com,PCI-DSS:2026-01-21,Internal_Data,63,No_Known_Breach,4041680,2027-08-22,2025-10-15
+VND00162,DataVault Partners,Data_Provider,Maria Li,maria.li@datavaultpartners.com,HIPAA:2027-03-31,Customer_PII,13,No_Known_Breach,2460272,2027-08-24,2025-06-14
+VND00163,DataVault Partners,MSP,Stephen Hwang,stephen.hwang@datavaultpartners.com,PCI-DSS:2025-12-13|GDPR:2026-11-08,Internal_Data,37,No_Known_Breach,1622035,2026-07-07,2025-12-29
+VND00164,Future Services,Software_Vendor,Amitabh Jackson,amitabh.jackson@futureservices.com,PCI-DSS:2026-02-12|SOC2:2027-03-27|FedRAMP:2025-12-12,Public_Data,68,Historical_Breach,2886858,2027-01-02,2025-07-23
+VND00165,Future Services,Contractor,Charles White,charles.white@futureservices.com,ISO27001:2026-11-23|PCI-DSS:2026-09-01|HIPAA:2026-05-20,Public_Data,91,Recent_Breach_12mo,1725921,2026-07-17,2026-01-30
+VND00166,CloudSync Partners,Hardware_Vendor,Anthony Sanchez,anthony.sanchez@cloudsyncpartners.com,GDPR:2026-05-13|HIPAA:2027-04-02|FedRAMP:2026-08-31,Internal_Data,77,No_Known_Breach,3801749,2026-11-29,2025-11-25
+VND00167,DataVault Partners,Contractor,Kenneth Verma,kenneth.verma@datavaultpartners.com,HIPAA:2026-12-27,Internal_Data,41,Recent_Breach_12mo,3997223,2026-05-18,2025-05-28
+VND00168,Future Corp,Cloud_Provider,William Mishra,william.mishra@futurecorp.com,HIPAA:2025-10-23|FedRAMP:2027-01-11,All_Systems,17,No_Known_Breach,2133386,2027-09-03,2025-10-24
+VND00169,Analytics Pro Technologies,SaaS_Provider,Rajesh Lopez,rajesh.lopez@analyticsprotechnologies.com,SOC2:2026-10-08|PCI-DSS:2025-10-30|GDPR:2026-04-07,All_Systems,71,No_Known_Breach,3176229,2028-03-31,2025-09-14
+VND00170,Global Ltd,SaaS_Provider,Aditya Guo,aditya.guo@globalltd.com,SOC2:2026-02-21,Internal_Data,23,No_Known_Breach,3454090,2027-06-05,2025-05-03
+VND00171,SecureNet Technologies,Data_Provider,Steven Jones,steven.jones@securenettechnologies.com,SOC2:2026-02-03|FedRAMP:2026-06-01,Customer_PII,46,No_Known_Breach,768538,2028-04-16,2025-07-31
+VND00172,DataVault Corp,SaaS_Provider,Anjali Connor,anjali.connor@datavaultcorp.com,PCI-DSS:2026-01-13,Internal_Data,86,No_Known_Breach,1778075,2028-03-26,2025-09-24
+VND00173,Smart Ltd,Data_Provider,Raja Dubois,raja.dubois@smartltd.com,GDPR:2025-11-03|PCI-DSS:2027-01-31|SOC2:2026-10-27,Internal_Data,65,Recent_Breach_12mo,2675280,2026-10-01,2025-08-12
+VND00174,Global Corp,Contractor,Deepika Williams,deepika.williams@globalcorp.com,HIPAA:2026-11-01|FedRAMP:2026-01-25,Internal_Data,33,No_Known_Breach,1068600,2026-10-18,2025-09-18
+VND00175,Analytics Pro Inc,Contractor,Thomas Mishra,thomas.mishra@analyticsproinc.com,PCI-DSS:2026-03-26|FedRAMP:2026-02-11|SOC2:2026-12-21,Financial_Data,50,Recent_Breach_12mo,2419658,2027-03-09,2025-12-07
+VND00176,CloudSync Corp,SaaS_Provider,Karan Davis,karan.davis@cloudsynccorp.com,ISO27001:2026-02-18|PCI-DSS:2027-04-02|FedRAMP:2026-02-01,Internal_Data,82,Recent_Breach_12mo,4341478,2027-05-26,2025-10-21
+VND00177,Enterprise Corp,Data_Provider,Neha Gonzalez,neha.gonzalez@enterprisecorp.com,FedRAMP:2026-10-24|GDPR:2025-11-18|HIPAA:2026-01-11,Customer_PII,83,No_Known_Breach,282387,2026-10-10,2025-07-15
+VND00178,Digital Solutions,Contractor,Arjun Menon,arjun.menon@digitalsolutions.com,HIPAA:2026-10-24,Customer_PII,61,No_Known_Breach,2414561,2026-10-28,2025-10-16
+VND00179,CloudSync Ltd,Contractor,Kevin Durand,kevin.durand@cloudsyncltd.com,SOC2:2027-03-27,Public_Data,87,No_Known_Breach,3471727,2026-04-04,2025-11-16
+VND00180,TechFlow Technologies,Contractor,Sanjana Durand,sanjana.durand@techflowtechnologies.com,HIPAA:2027-04-09|PCI-DSS:2025-12-18,Financial_Data,74,Historical_Breach,3664263,2026-04-24,2025-05-02
+VND00181,Global Group,Hardware_Vendor,Fatima Xu,fatima.xu@globalgroup.com,FedRAMP:2026-04-06,Customer_PII,33,Under_Investigation,1839126,2026-04-03,2025-08-13
+VND00182,Future Partners,Cloud_Provider,Sanjana Martin,sanjana.martin@futurepartners.com,ISO27001:2025-11-16|FedRAMP:2025-11-04|GDPR:2026-07-30,Public_Data,65,Recent_Breach_12mo,3037804,2026-12-01,2026-01-14
+VND00183,Global Innovations,Data_Provider,Meera Kim,meera.kim@globalinnovations.com,ISO27001:2027-01-31|FedRAMP:2025-11-22,Customer_PII,60,No_Known_Breach,2194420,2028-02-12,2025-09-08
+VND00184,Digital Innovations,Data_Provider,Karan Murphy,karan.murphy@digitalinnovations.com,SOC2:2026-02-20|GDPR:2027-04-01|HIPAA:2026-01-28,Customer_PII,90,No_Known_Breach,782129,2027-05-21,2025-12-05
+VND00185,SecureNet Partners,Hardware_Vendor,Nisha Kumar,nisha.kumar@securenetpartners.com,PCI-DSS:2026-06-15|FedRAMP:2026-10-19|HIPAA:2027-01-06,Internal_Data,96,No_Known_Breach,4761330,2026-09-07,2026-03-15
+VND00186,Smart Corp,Contractor,Nicholas Kim,nicholas.kim@smartcorp.com,HIPAA:2027-02-05|SOC2:2026-02-24|PCI-DSS:2027-03-22,All_Systems,71,No_Known_Breach,4043534,2026-09-19,2025-12-01
+VND00187,Smart Services,SaaS_Provider,Thomas Smith,thomas.smith@smartservices.com,GDPR:2025-12-22|SOC2:2025-11-09,Financial_Data,78,No_Known_Breach,2224003,2027-10-02,2025-12-16
+VND00188,SecureNet Corp,Contractor,Yuki Sullivan,yuki.sullivan@securenetcorp.com,GDPR:2027-01-25|ISO27001:2027-01-10,Internal_Data,11,No_Known_Breach,580495,2027-10-20,2026-01-14
+VND00189,Global Solutions,Security_Vendor,Jeffrey Martinez,jeffrey.martinez@globalsolutions.com,HIPAA:2027-01-15|PCI-DSS:2026-11-22|GDPR:2026-02-20,Internal_Data,73,Historical_Breach,2335427,2027-09-14,2025-12-26
+VND00190,SecureNet Innovations,Consulting,Aisha Miller,aisha.miller@securenetinnovations.com,FedRAMP:2025-11-16|SOC2:2027-03-12,Public_Data,48,Recent_Breach_12mo,4744178,2028-02-13,2025-06-08
+VND00191,Digital Partners,Security_Vendor,Arjun Singh,arjun.singh@digitalpartners.com,SOC2:2027-01-27|ISO27001:2027-02-04|HIPAA:2026-09-19,Internal_Data,23,Historical_Breach,4469744,2028-03-25,2025-11-03
+VND00192,Digital Systems,Hardware_Vendor,Daniel Thompson,daniel.thompson@digitalsystems.com,FedRAMP:2027-04-19|ISO27001:2026-11-27|GDPR:2026-10-03,Public_Data,86,Recent_Breach_12mo,3007431,2027-07-22,2025-10-28
+VND00193,DataVault Group,MSP,Raja Johnson,raja.johnson@datavaultgroup.com,HIPAA:2025-11-06,Internal_Data,13,No_Known_Breach,1133121,2026-06-27,2025-11-08
+VND00194,Future Ltd,Security_Vendor,Nikhil Hernandez,nikhil.hernandez@futureltd.com,GDPR:2027-04-14,Internal_Data,99,No_Known_Breach,2197892,2026-04-04,2025-12-10
+VND00195,DataVault Inc,Security_Vendor,Elena Becker,elena.becker@datavaultinc.com,HIPAA:2026-07-15|PCI-DSS:2027-02-13|ISO27001:2026-11-29,Customer_PII,41,Recent_Breach_12mo,242920,2027-03-27,2025-04-28
+VND00196,CloudSync Solutions,SaaS_Provider,Joseph Kang,joseph.kang@cloudsyncsolutions.com,PCI-DSS:2027-02-14|FedRAMP:2027-03-28,Financial_Data,85,Historical_Breach,1072187,2028-04-16,2025-11-06
+VND00197,CloudSync Inc,Consulting,Maria Martinez,maria.martinez@cloudsyncinc.com,GDPR:2027-03-11,Customer_PII,57,Recent_Breach_12mo,1397456,2027-12-22,2025-10-01
+VND00198,DataVault Innovations,Cloud_Provider,Zainab Chen,zainab.chen@datavaultinnovations.com,FedRAMP:2026-08-27|ISO27001:2027-03-14,Public_Data,20,No_Known_Breach,1788554,2027-04-24,2025-06-12
+VND00199,SecureNet Innovations,MSP,Deepika Chen,deepika.chen@securenetinnovations.com,FedRAMP:2026-01-05|ISO27001:2027-04-14|HIPAA:2026-10-30,Internal_Data,50,No_Known_Breach,563498,2026-06-15,2025-11-01
+VND00200,SecureNet Technologies,Cloud_Provider,Diya Schulz,diya.schulz@securenettechnologies.com,FedRAMP:2026-12-30,Internal_Data,70,Under_Investigation,2631119,2027-09-11,2025-06-13
+VND00201,Smart Partners,Security_Vendor,Joshua Martinez,joshua.martinez@smartpartners.com,PCI-DSS:2027-01-26|HIPAA:2026-08-16,Internal_Data,37,Historical_Breach,3051087,2028-02-27,2025-06-25
+VND00202,DataVault Partners,Contractor,David Ramirez,david.ramirez@datavaultpartners.com,SOC2:2026-02-04|ISO27001:2026-03-12|FedRAMP:2025-12-06,Internal_Data,42,No_Known_Breach,1663576,2026-04-17,2025-07-29
+VND00203,DataVault Ltd,Security_Vendor,Ryan Lee,ryan.lee@datavaultltd.com,GDPR:2027-04-01|ISO27001:2026-09-15,Internal_Data,63,No_Known_Breach,4232124,2027-08-29,2025-08-16
+VND00204,SecureNet Group,Data_Provider,Rohan Russo,rohan.russo@securenetgroup.com,PCI-DSS:2026-03-23,Public_Data,22,No_Known_Breach,2401337,2027-04-12,2025-08-15
+VND00205,Analytics Pro Ltd,Security_Vendor,Joseph Rizzo,joseph.rizzo@analyticsproltd.com,FedRAMP:2026-04-25,Customer_PII,98,No_Known_Breach,4074215,2027-11-21,2025-06-17
+VND00206,SecureNet Solutions,Cloud_Provider,Kenneth Rao,kenneth.rao@securenetsolutions.com,PCI-DSS:2026-10-02|FedRAMP:2026-02-07,Financial_Data,25,Historical_Breach,214407,2027-04-01,2025-05-31
+VND00207,Smart Systems,Consulting,Rohan Han,rohan.han@smartsystems.com,SOC2:2026-08-20|ISO27001:2026-01-02|FedRAMP:2026-09-11,Internal_Data,42,Under_Investigation,2496243,2026-12-20,2025-06-13
+VND00208,TechFlow Systems,Data_Provider,Diya Lopez,diya.lopez@techflowsystems.com,PCI-DSS:2026-11-14|ISO27001:2026-12-07|GDPR:2026-07-27,Internal_Data,44,No_Known_Breach,1895475,2026-12-18,2025-11-29
+VND00209,DataVault Innovations,Software_Vendor,Mark Colombo,mark.colombo@datavaultinnovations.com,FedRAMP:2026-06-26|PCI-DSS:2027-01-27|GDPR:2026-03-20,Customer_PII,52,Recent_Breach_12mo,4367978,2027-01-21,2025-12-26
+VND00210,SecureNet Technologies,Data_Provider,Priya Sharma,priya.sharma@securenettechnologies.com,SOC2:2026-02-17|FedRAMP:2026-07-18|GDPR:2026-11-07,Public_Data,45,Recent_Breach_12mo,1730704,2027-02-22,2026-01-17
+VND00211,Enterprise Innovations,SaaS_Provider,Xiulan Lewis,xiulan.lewis@enterpriseinnovations.com,FedRAMP:2027-04-03|SOC2:2026-09-15,Customer_PII,36,Recent_Breach_12mo,222677,2027-02-23,2026-01-09
+VND00212,Analytics Pro Inc,Hardware_Vendor,Stephen Ferrari,stephen.ferrari@analyticsproinc.com,FedRAMP:2026-06-17,All_Systems,22,No_Known_Breach,4098186,2027-10-10,2025-09-24
+VND00213,TechFlow Services,Consulting,Jason Jones,jason.jones@techflowservices.com,PCI-DSS:2026-10-31|ISO27001:2026-01-22,Public_Data,44,No_Known_Breach,2247675,2026-07-15,2025-06-11
+VND00214,Analytics Pro Corp,SaaS_Provider,George Mishra,george.mishra@analyticsprocorp.com,PCI-DSS:2027-03-10|ISO27001:2026-03-02|HIPAA:2025-11-20,Customer_PII,86,No_Known_Breach,1904490,2026-12-24,2025-11-27
+VND00215,Smart Technologies,Hardware_Vendor,Matthew Li,matthew.li@smarttechnologies.com,ISO27001:2026-06-10|SOC2:2026-02-12,Internal_Data,96,No_Known_Breach,229056,2027-12-03,2025-10-17
+VND00216,DataVault Corp,Hardware_Vendor,Sofia Bhat,sofia.bhat@datavaultcorp.com,SOC2:2027-01-14|PCI-DSS:2027-01-22,Public_Data,97,Under_Investigation,758627,2028-04-02,2025-04-29
+VND00217,TechFlow Inc,Consulting,Akshay Sullivan,akshay.sullivan@techflowinc.com,GDPR:2027-03-13|ISO27001:2025-11-06,Public_Data,53,No_Known_Breach,4746871,2027-01-27,2025-07-09
+VND00218,CloudSync Systems,SaaS_Provider,Neha Hwang,neha.hwang@cloudsyncsystems.com,ISO27001:2027-02-01|GDPR:2027-02-06|PCI-DSS:2027-02-19,Internal_Data,18,No_Known_Breach,2893349,2027-07-25,2025-12-26
+VND00219,Future Innovations,Software_Vendor,Jason Thomas,jason.thomas@futureinnovations.com,PCI-DSS:2027-03-01|FedRAMP:2026-08-27|HIPAA:2027-01-03,Customer_PII,96,No_Known_Breach,4177697,2026-04-23,2025-10-08
+VND00220,SecureNet Ltd,Cloud_Provider,Jason Rao,jason.rao@securenetltd.com,HIPAA:2026-07-27|FedRAMP:2025-11-17,Public_Data,98,Historical_Breach,4785907,2026-07-29,2025-09-20
+VND00221,Digital Ltd,Security_Vendor,Stephen Han,stephen.han@digitalltd.com,PCI-DSS:2027-02-16|HIPAA:2026-02-07,Internal_Data,55,No_Known_Breach,1135807,2026-12-25,2025-10-04
+VND00222,Digital Group,Hardware_Vendor,Steven Ferrari,steven.ferrari@digitalgroup.com,FedRAMP:2026-02-03|HIPAA:2027-02-14|GDPR:2027-04-01,Customer_PII,62,Historical_Breach,4106440,2026-08-18,2026-01-26
+VND00223,Analytics Pro Ltd,Data_Provider,Yuki Durand,yuki.durand@analyticsproltd.com,HIPAA:2027-04-02|GDPR:2026-11-09,Financial_Data,96,Under_Investigation,4731750,2026-08-11,2025-07-29
+VND00224,Smart Systems,MSP,William Thompson,william.thompson@smartsystems.com,GDPR:2026-05-16|SOC2:2026-05-13|FedRAMP:2027-01-14,Customer_PII,43,Historical_Breach,3708995,2028-01-29,2025-06-08
+VND00225,CloudSync Ltd,Consulting,Raja Moore,raja.moore@cloudsyncltd.com,ISO27001:2026-05-06|FedRAMP:2025-10-22,Public_Data,86,No_Known_Breach,3991333,2027-05-09,2025-10-26
+VND00226,Enterprise Inc,Consulting,Pooja Bianchi,pooja.bianchi@enterpriseinc.com,PCI-DSS:2025-12-03|GDPR:2026-03-25|SOC2:2026-07-17,Internal_Data,41,Historical_Breach,1653034,2026-12-22,2025-12-22
+VND00227,Analytics Pro Partners,Software_Vendor,Pooja Ramirez,pooja.ramirez@analyticspropartners.com,PCI-DSS:2025-12-22|SOC2:2025-12-15,Internal_Data,26,No_Known_Breach,4853308,2026-09-11,2025-04-21
+VND00228,CloudSync Services,Cloud_Provider,Anjali Clark,anjali.clark@cloudsyncservices.com,GDPR:2027-03-13|SOC2:2026-03-08|PCI-DSS:2026-08-24,Customer_PII,90,Recent_Breach_12mo,1667365,2026-08-30,2025-07-22
+VND00229,Analytics Pro Partners,Hardware_Vendor,Jonathan Dubois,jonathan.dubois@analyticspropartners.com,HIPAA:2026-07-30,Public_Data,84,Historical_Breach,1436906,2026-08-10,2025-12-24
+VND00230,DataVault Corp,SaaS_Provider,George Smith,george.smith@datavaultcorp.com,PCI-DSS:2027-01-05|HIPAA:2026-06-05,Internal_Data,66,No_Known_Breach,1562452,2028-02-29,2025-10-31
+VND00231,Digital Innovations,Data_Provider,Arjun Sullivan,arjun.sullivan@digitalinnovations.com,PCI-DSS:2026-03-06|ISO27001:2027-01-24,Financial_Data,89,Historical_Breach,1581561,2028-03-24,2026-01-31
+VND00232,Digital Group,Software_Vendor,Amara Murphy,amara.murphy@digitalgroup.com,SOC2:2027-03-22|FedRAMP:2027-02-22,Customer_PII,22,Historical_Breach,2966212,2027-12-20,2026-01-19
+VND00233,CloudSync Ltd,SaaS_Provider,William Sullivan,william.sullivan@cloudsyncltd.com,SOC2:2027-03-26|GDPR:2026-12-12,Financial_Data,52,Historical_Breach,147898,2026-04-20,2026-01-15
+VND00234,Global Technologies,Security_Vendor,Kevin Thomas,kevin.thomas@globaltechnologies.com,FedRAMP:2027-03-26|PCI-DSS:2025-12-02,Internal_Data,43,No_Known_Breach,249383,2027-09-25,2025-07-13
+VND00235,Enterprise Systems,Security_Vendor,Matthew Jo,matthew.jo@enterprisesystems.com,FedRAMP:2025-12-23,Internal_Data,50,No_Known_Breach,1753323,2027-04-06,2025-07-29
+VND00236,Smart Innovations,Cloud_Provider,Priya Wang,priya.wang@smartinnovations.com,PCI-DSS:2026-02-18|ISO27001:2027-02-24|SOC2:2026-04-15,Internal_Data,88,No_Known_Breach,656592,2026-07-16,2026-02-25
+VND00237,Analytics Pro Innovations,SaaS_Provider,Diya Weber,diya.weber@analyticsproinnovations.com,ISO27001:2026-04-25|HIPAA:2026-11-19,All_Systems,90,Historical_Breach,4276026,2026-11-30,2025-06-21
+VND00238,SecureNet Ltd,Security_Vendor,Christopher White,christopher.white@securenetltd.com,SOC2:2026-02-14,Public_Data,54,No_Known_Breach,3498363,2026-11-18,2025-11-06
+VND00239,TechFlow Technologies,Data_Provider,Akshay Colombo,akshay.colombo@techflowtechnologies.com,PCI-DSS:2026-09-24|HIPAA:2026-04-23|GDPR:2026-10-27,Customer_PII,80,Historical_Breach,2755061,2027-02-08,2026-01-15
+VND00240,SecureNet Technologies,Software_Vendor,Aisha Davis,aisha.davis@securenettechnologies.com,SOC2:2026-08-03|ISO27001:2026-02-26,Public_Data,64,No_Known_Breach,1112419,2027-07-01,2026-01-25
+VND00241,Future Innovations,Data_Provider,Thomas Sullivan,thomas.sullivan@futureinnovations.com,SOC2:2027-02-17|FedRAMP:2027-02-04,Public_Data,49,Historical_Breach,648833,2027-01-25,2025-11-06
+VND00242,Global Group,Consulting,Paul Lee,paul.lee@globalgroup.com,SOC2:2025-12-13,Public_Data,95,No_Known_Breach,4120996,2027-06-15,2025-07-24
+VND00243,DataVault Partners,MSP,Deepika Schulz,deepika.schulz@datavaultpartners.com,HIPAA:2025-12-03,Customer_PII,49,No_Known_Breach,4409723,2027-11-19,2025-12-03
+VND00244,Global Systems,Contractor,Isha Garcia,isha.garcia@globalsystems.com,HIPAA:2026-05-04,Customer_PII,25,No_Known_Breach,1591882,2028-03-26,2025-07-21
+VND00245,CloudSync Services,Data_Provider,George Jones,george.jones@cloudsyncservices.com,HIPAA:2025-12-13|ISO27001:2026-04-04,Customer_PII,85,No_Known_Breach,2801696,2026-07-15,2025-12-07
+VND00246,Analytics Pro Group,MSP,Christopher Sullivan,christopher.sullivan@analyticsprogroup.com,PCI-DSS:2026-10-09,Internal_Data,22,Historical_Breach,3256965,2026-09-07,2025-09-11
+VND00247,SecureNet Technologies,Contractor,George Lopez,george.lopez@securenettechnologies.com,FedRAMP:2026-06-12|SOC2:2026-11-21,Internal_Data,22,Historical_Breach,3349344,2026-05-07,2026-03-14
+VND00248,Future Technologies,Contractor,Pooja Wang,pooja.wang@futuretechnologies.com,FedRAMP:2026-09-12|SOC2:2026-11-11|GDPR:2026-05-29,Customer_PII,66,Recent_Breach_12mo,4744591,2027-09-29,2026-01-04
+VND00249,Digital Innovations,Data_Provider,Sanjana Thomas,sanjana.thomas@digitalinnovations.com,SOC2:2026-01-01,Internal_Data,24,No_Known_Breach,2627409,2026-06-21,2025-11-15
+VND00250,Global Partners,Consulting,Arjun Schneider,arjun.schneider@globalpartners.com,SOC2:2026-05-03|HIPAA:2026-02-23,Financial_Data,28,No_Known_Breach,696646,2027-06-19,2025-11-18
+VND00251,CloudSync Ltd,Data_Provider,Karan Davis,karan.davis@cloudsyncltd.com,HIPAA:2026-06-20|GDPR:2027-01-25|FedRAMP:2025-11-17,Customer_PII,72,No_Known_Breach,3787156,2026-04-28,2025-06-02
+VND00252,Enterprise Systems,Contractor,Rajesh Das,rajesh.das@enterprisesystems.com,FedRAMP:2027-03-19|GDPR:2025-11-27,Financial_Data,86,No_Known_Breach,1658106,2026-10-12,2025-05-08
+VND00253,CloudSync Innovations,Security_Vendor,Robert Moore,robert.moore@cloudsyncinnovations.com,SOC2:2026-02-02|PCI-DSS:2027-02-06,Internal_Data,18,No_Known_Breach,138152,2027-06-18,2025-07-10
+VND00254,Future Ltd,Cloud_Provider,Anjali Esposito,anjali.esposito@futureltd.com,GDPR:2025-12-16,Public_Data,19,Historical_Breach,3625414,2026-08-01,2026-03-01
+VND00255,Global Innovations,Hardware_Vendor,Andrew Perez,andrew.perez@globalinnovations.com,HIPAA:2026-11-03|SOC2:2027-04-08|ISO27001:2025-12-07,Customer_PII,18,Historical_Breach,2452193,2026-08-09,2026-03-06
+VND00256,Future Solutions,Contractor,Harsh He,harsh.he@futuresolutions.com,GDPR:2026-05-29,Customer_PII,96,No_Known_Breach,3413662,2027-11-24,2025-06-30
+VND00257,SecureNet Ltd,Cloud_Provider,Leila Robinson,leila.robinson@securenetltd.com,GDPR:2026-05-05|ISO27001:2025-12-22,Internal_Data,73,No_Known_Breach,299465,2026-07-04,2025-08-14
+VND00258,Analytics Pro Partners,Security_Vendor,Eric Schmidt,eric.schmidt@analyticspropartners.com,FedRAMP:2025-11-18,Customer_PII,92,Historical_Breach,4471830,2026-09-24,2026-01-30
+VND00259,Analytics Pro Technologies,Security_Vendor,Matthew Smith,matthew.smith@analyticsprotechnologies.com,GDPR:2026-01-01,Internal_Data,21,Recent_Breach_12mo,55900,2027-12-28,2025-10-13
+VND00260,Enterprise Services,Cloud_Provider,Zainab Gupta,zainab.gupta@enterpriseservices.com,HIPAA:2025-11-09|PCI-DSS:2026-10-22,Financial_Data,85,Recent_Breach_12mo,3932509,2027-09-26,2025-10-27
+VND00261,Global Corp,Security_Vendor,William Murphy,william.murphy@globalcorp.com,FedRAMP:2025-12-09|HIPAA:2027-02-01,Internal_Data,21,No_Known_Breach,3966990,2028-01-05,2025-11-11
+VND00262,CloudSync Systems,SaaS_Provider,Nicholas Wang,nicholas.wang@cloudsyncsystems.com,PCI-DSS:2026-12-18|SOC2:2026-04-24,Internal_Data,13,Recent_Breach_12mo,1729541,2027-11-24,2025-06-18
+VND00263,Global Solutions,Hardware_Vendor,Riya Martin,riya.martin@globalsolutions.com,FedRAMP:2026-01-02,Public_Data,87,Historical_Breach,2663550,2027-01-15,2025-09-11
+VND00264,Analytics Pro Services,Contractor,Sofia Taylor,sofia.taylor@analyticsproservices.com,HIPAA:2025-11-23|FedRAMP:2026-04-16,Internal_Data,48,Recent_Breach_12mo,3910024,2027-10-27,2026-03-12
+VND00265,Smart Corp,Contractor,Nikhil Thomas,nikhil.thomas@smartcorp.com,ISO27001:2026-05-31,Internal_Data,44,No_Known_Breach,3198304,2026-09-15,2025-04-25
+VND00266,Smart Services,Data_Provider,Matthew Fischer,matthew.fischer@smartservices.com,HIPAA:2026-02-25|ISO27001:2027-02-01,Customer_PII,20,No_Known_Breach,2546459,2026-11-28,2025-05-24
+VND00267,Future Partners,Data_Provider,Nikhil Bianchi,nikhil.bianchi@futurepartners.com,HIPAA:2026-10-06|GDPR:2026-10-31,Customer_PII,26,Under_Investigation,934366,2027-09-10,2025-10-29
+VND00268,SecureNet Solutions,Security_Vendor,Donald Brown,donald.brown@securenetsolutions.com,SOC2:2026-01-10,Internal_Data,20,Historical_Breach,985623,2027-06-20,2026-01-03
+VND00269,Digital Partners,Cloud_Provider,Jonathan Wagner,jonathan.wagner@digitalpartners.com,ISO27001:2025-11-20,All_Systems,90,Historical_Breach,2993749,2027-04-14,2025-11-26
+VND00270,Global Corp,Cloud_Provider,Aisha Huang,aisha.huang@globalcorp.com,HIPAA:2026-05-15|PCI-DSS:2026-05-23|ISO27001:2026-08-17,Public_Data,11,Recent_Breach_12mo,2517283,2027-11-18,2025-10-30
+VND00271,Smart Services,Software_Vendor,Sofia Sanchez,sofia.sanchez@smartservices.com,HIPAA:2026-07-16|PCI-DSS:2026-10-23,Internal_Data,49,No_Known_Breach,1769772,2027-12-02,2025-07-03
+VND00272,Analytics Pro Solutions,Consulting,Jonathan Pillai,jonathan.pillai@analyticsprosolutions.com,HIPAA:2025-12-12|FedRAMP:2026-09-04|PCI-DSS:2026-07-03,Public_Data,40,No_Known_Breach,4499816,2026-11-19,2025-08-16
+VND00273,DataVault Innovations,Software_Vendor,Aisha Lim,aisha.lim@datavaultinnovations.com,HIPAA:2026-04-19|SOC2:2026-07-22|FedRAMP:2026-12-01,All_Systems,54,No_Known_Breach,4332239,2028-03-16,2025-10-15
+VND00274,SecureNet Corp,Consulting,Yuki Lewis,yuki.lewis@securenetcorp.com,SOC2:2026-08-19|HIPAA:2026-09-27,Internal_Data,89,Historical_Breach,742859,2027-03-08,2025-12-25
+VND00275,DataVault Inc,Consulting,Shruti Dubois,shruti.dubois@datavaultinc.com,GDPR:2026-10-29|SOC2:2026-01-09|ISO27001:2026-06-14,Internal_Data,21,No_Known_Breach,2901398,2027-09-27,2026-03-01
+VND00276,DataVault Ltd,Consulting,Brian Jo,brian.jo@datavaultltd.com,FedRAMP:2026-04-23|ISO27001:2025-12-24|HIPAA:2026-11-16,Internal_Data,61,No_Known_Breach,3113892,2026-11-24,2026-01-30
+VND00277,TechFlow Inc,Software_Vendor,Maria O'Brien,maria.o'brien@techflowinc.com,GDPR:2025-11-29|ISO27001:2026-09-27|SOC2:2026-12-03,Customer_PII,55,No_Known_Breach,1031344,2026-07-24,2026-02-27
+VND00278,SecureNet Services,Hardware_Vendor,Ryan Chen,ryan.chen@securenetservices.com,ISO27001:2027-02-27|SOC2:2027-03-25|FedRAMP:2026-07-10,Internal_Data,51,Recent_Breach_12mo,559454,2026-06-01,2025-08-28
+VND00279,Global Corp,SaaS_Provider,Andrew Hoffmann,andrew.hoffmann@globalcorp.com,PCI-DSS:2026-09-21,Internal_Data,42,No_Known_Breach,2019703,2027-09-19,2026-01-13
+VND00280,Global Inc,Hardware_Vendor,Ronald Ferrari,ronald.ferrari@globalinc.com,HIPAA:2026-05-08|SOC2:2026-05-21,Internal_Data,98,Historical_Breach,1718070,2026-12-23,2025-09-13
+VND00281,Analytics Pro Technologies,Software_Vendor,Aditya Das,aditya.das@analyticsprotechnologies.com,GDPR:2026-10-05|HIPAA:2026-12-20,Public_Data,77,Recent_Breach_12mo,1658592,2027-12-16,2025-04-22
+VND00282,Smart Group,MSP,Kevin Verma,kevin.verma@smartgroup.com,PCI-DSS:2026-02-25|HIPAA:2026-07-27,Public_Data,95,Historical_Breach,4474217,2026-10-26,2025-06-09
+VND00283,Analytics Pro Corp,Data_Provider,Christopher Liu,christopher.liu@analyticsprocorp.com,SOC2:2026-06-11,Public_Data,28,No_Known_Breach,3367170,2027-07-12,2025-11-17
+VND00284,Global Solutions,Cloud_Provider,Jeffrey Burke,jeffrey.burke@globalsolutions.com,HIPAA:2026-06-29|PCI-DSS:2026-09-06,Financial_Data,27,No_Known_Breach,2820205,2028-02-04,2025-05-20
+VND00285,DataVault Solutions,Cloud_Provider,David Lim,david.lim@datavaultsolutions.com,PCI-DSS:2027-02-06|FedRAMP:2025-12-28|ISO27001:2027-02-04,Internal_Data,28,No_Known_Breach,3569710,2026-08-14,2025-10-12
+VND00286,CloudSync Technologies,SaaS_Provider,Thomas Schulz,thomas.schulz@cloudsynctechnologies.com,SOC2:2027-04-01|PCI-DSS:2026-05-06|HIPAA:2025-11-12,Customer_PII,98,Recent_Breach_12mo,2659094,2026-09-12,2026-03-05
+VND00287,Global Technologies,Software_Vendor,Priya Bernard,priya.bernard@globaltechnologies.com,GDPR:2025-12-25|HIPAA:2025-12-23,Internal_Data,75,No_Known_Breach,1544198,2027-09-16,2026-01-06
+VND00288,Analytics Pro Solutions,MSP,Mark Sanchez,mark.sanchez@analyticsprosolutions.com,ISO27001:2025-11-05|SOC2:2027-03-06,Internal_Data,62,No_Known_Breach,1315437,2026-11-05,2026-01-20
+VND00289,Future Group,SaaS_Provider,Brian Russo,brian.russo@futuregroup.com,GDPR:2027-03-27|FedRAMP:2026-12-13,Customer_PII,66,No_Known_Breach,4345548,2027-05-12,2025-11-15
+VND00290,Future Inc,Hardware_Vendor,Deepika Jones,deepika.jones@futureinc.com,HIPAA:2026-11-23|SOC2:2027-04-03|ISO27001:2025-11-23,Internal_Data,64,No_Known_Breach,3456694,2027-12-03,2025-07-18
+VND00291,Global Corp,MSP,Kenneth Martinez,kenneth.martinez@globalcorp.com,GDPR:2026-12-22,Customer_PII,18,Historical_Breach,2236108,2026-08-30,2026-01-25
+VND00292,DataVault Group,Contractor,Donald Thomas,donald.thomas@datavaultgroup.com,PCI-DSS:2026-07-09,Public_Data,52,No_Known_Breach,541133,2027-11-28,2025-04-22
+VND00293,Smart Services,Contractor,Ryan Kim,ryan.kim@smartservices.com,GDPR:2026-09-29|PCI-DSS:2026-02-14|HIPAA:2027-02-26,Customer_PII,19,No_Known_Breach,2953760,2026-12-03,2025-08-25
+VND00294,Enterprise Ltd,Hardware_Vendor,Eric Hernandez,eric.hernandez@enterpriseltd.com,ISO27001:2025-11-18,Internal_Data,89,No_Known_Breach,1172608,2027-04-17,2026-01-22
+VND00295,DataVault Services,MSP,Larry Ramirez,larry.ramirez@datavaultservices.com,ISO27001:2025-10-26|GDPR:2026-12-03,Internal_Data,32,Recent_Breach_12mo,2835399,2028-02-11,2025-11-12
+VND00296,CloudSync Inc,Contractor,Diya Yang,diya.yang@cloudsyncinc.com,FedRAMP:2027-03-21,Financial_Data,64,No_Known_Breach,879157,2027-08-15,2025-10-21
+VND00297,Enterprise Technologies,Cloud_Provider,Edward Yang,edward.yang@enterprisetechnologies.com,SOC2:2026-09-23,Public_Data,20,Recent_Breach_12mo,125554,2027-08-22,2025-09-13
+VND00298,Smart Technologies,Security_Vendor,Christopher Hwang,christopher.hwang@smarttechnologies.com,FedRAMP:2026-06-02|ISO27001:2026-08-29|HIPAA:2026-04-01,Customer_PII,73,No_Known_Breach,2355551,2026-05-31,2025-09-25
+VND00299,SecureNet Innovations,Contractor,Larry Kim,larry.kim@securenetinnovations.com,PCI-DSS:2026-09-26|GDPR:2026-10-26,Public_Data,12,No_Known_Breach,1297756,2027-10-24,2025-10-19
+VND00300,Digital Group,Contractor,Riya White,riya.white@digitalgroup.com,SOC2:2026-08-06,Public_Data,21,No_Known_Breach,4950349,2026-04-26,2026-02-12
+VND00301,DataVault Group,SaaS_Provider,Jason Li,jason.li@datavaultgroup.com,FedRAMP:2026-01-20,Public_Data,71,No_Known_Breach,1994381,2027-11-15,2025-09-03
+VND00302,SecureNet Ltd,Software_Vendor,William Nair,william.nair@securenetltd.com,GDPR:2026-10-31,Customer_PII,22,No_Known_Breach,1104630,2027-06-21,2025-06-09
+VND00303,Global Partners,Cloud_Provider,Rajesh Yang,rajesh.yang@globalpartners.com,HIPAA:2026-08-02|ISO27001:2026-09-10|GDPR:2026-06-14,Customer_PII,82,Recent_Breach_12mo,1976162,2028-02-20,2025-05-16
+VND00304,Smart Partners,Cloud_Provider,James Yang,james.yang@smartpartners.com,ISO27001:2026-07-04|SOC2:2027-01-16,Customer_PII,94,No_Known_Breach,1133633,2026-04-02,2025-08-07
+VND00305,TechFlow Technologies,Software_Vendor,Rohan Schmidt,rohan.schmidt@techflowtechnologies.com,ISO27001:2026-07-01|HIPAA:2026-06-27,Internal_Data,59,Recent_Breach_12mo,3537631,2027-02-19,2025-10-18
+VND00306,Analytics Pro Solutions,Software_Vendor,Meera Lewis,meera.lewis@analyticsprosolutions.com,ISO27001:2027-03-15|HIPAA:2027-04-17|SOC2:2026-08-02,Financial_Data,84,No_Known_Breach,4881859,2027-02-16,2025-09-02
+VND00307,SecureNet Partners,Hardware_Vendor,Michael Weber,michael.weber@securenetpartners.com,HIPAA:2026-02-19|PCI-DSS:2026-01-21,All_Systems,77,Historical_Breach,4920554,2027-01-16,2026-01-13
+VND00308,TechFlow Corp,Hardware_Vendor,Thomas Burke,thomas.burke@techflowcorp.com,ISO27001:2026-05-09|GDPR:2027-04-10|FedRAMP:2026-08-28,Financial_Data,33,Recent_Breach_12mo,1310510,2028-04-14,2025-04-24
+VND00309,CloudSync Inc,Security_Vendor,Mark Rossi,mark.rossi@cloudsyncinc.com,ISO27001:2026-04-01|FedRAMP:2026-12-01|SOC2:2026-05-21,Customer_PII,83,No_Known_Breach,1557242,2026-08-14,2025-06-09
+VND00310,Analytics Pro Solutions,Consulting,Priya Sullivan,priya.sullivan@analyticsprosolutions.com,PCI-DSS:2026-08-28|ISO27001:2026-09-01,Internal_Data,10,No_Known_Breach,583845,2027-01-01,2025-11-12
+VND00311,Future Technologies,Consulting,Rohan Hoffmann,rohan.hoffmann@futuretechnologies.com,FedRAMP:2026-09-11,Internal_Data,51,Under_Investigation,1234800,2026-08-14,2025-12-29
+VND00312,Enterprise Corp,Hardware_Vendor,Elena Kumar,elena.kumar@enterprisecorp.com,FedRAMP:2026-11-09|PCI-DSS:2026-10-21|ISO27001:2026-12-19,Public_Data,30,Historical_Breach,598687,2027-12-06,2025-08-04
+VND00313,CloudSync Solutions,Hardware_Vendor,Zainab Wang,zainab.wang@cloudsyncsolutions.com,HIPAA:2026-07-30|FedRAMP:2026-08-25|PCI-DSS:2026-01-11,Financial_Data,36,Under_Investigation,2783086,2027-02-21,2026-02-21
+VND00314,Smart Technologies,Contractor,Varun Reddy,varun.reddy@smarttechnologies.com,SOC2:2026-06-19|ISO27001:2026-12-05|HIPAA:2026-06-10,Internal_Data,87,No_Known_Breach,1400700,2026-11-09,2026-01-09
+VND00315,Smart Systems,Contractor,Charles Petit,charles.petit@smartsystems.com,GDPR:2026-07-06,Internal_Data,19,Historical_Breach,491460,2026-05-03,2025-12-18
+VND00316,CloudSync Solutions,Consulting,Nicholas Connor,nicholas.connor@cloudsyncsolutions.com,ISO27001:2027-02-19,Customer_PII,42,Recent_Breach_12mo,3812019,2027-01-21,2025-11-11
+VND00317,SecureNet Partners,Security_Vendor,Kenneth Gonzalez,kenneth.gonzalez@securenetpartners.com,FedRAMP:2026-06-27,Internal_Data,57,No_Known_Breach,3114640,2027-09-05,2026-01-09
+VND00318,Digital Partners,Security_Vendor,David Lee,david.lee@digitalpartners.com,FedRAMP:2026-10-27|HIPAA:2026-09-26|PCI-DSS:2027-03-28,Public_Data,57,No_Known_Breach,3378051,2027-10-29,2026-02-06
+VND00319,SecureNet Group,Software_Vendor,Xiulan Meyer,xiulan.meyer@securenetgroup.com,PCI-DSS:2025-12-21|SOC2:2026-05-10,Customer_PII,48,Historical_Breach,2164890,2026-07-26,2025-05-10
+VND00320,Global Solutions,Hardware_Vendor,Fatima Brown,fatima.brown@globalsolutions.com,HIPAA:2026-06-07,Customer_PII,86,Under_Investigation,1393058,2028-03-29,2025-10-19
+VND00321,Enterprise Solutions,Security_Vendor,Diya Bianchi,diya.bianchi@enterprisesolutions.com,PCI-DSS:2026-02-18|ISO27001:2026-06-03,Internal_Data,13,No_Known_Breach,2433656,2026-04-11,2025-12-03
+VND00322,SecureNet Innovations,Cloud_Provider,Nisha Hwang,nisha.hwang@securenetinnovations.com,GDPR:2026-12-01|FedRAMP:2026-04-04,Internal_Data,99,No_Known_Breach,3005761,2026-09-19,2025-12-14
+VND00323,Future Innovations,MSP,Larry Hernandez,larry.hernandez@futureinnovations.com,ISO27001:2026-11-21|FedRAMP:2027-03-22,All_Systems,13,Recent_Breach_12mo,1042535,2028-01-21,2025-08-15
+VND00324,Enterprise Corp,Hardware_Vendor,Vikram Yang,vikram.yang@enterprisecorp.com,HIPAA:2027-03-27,Customer_PII,40,No_Known_Breach,4429704,2027-07-27,2026-02-06
+VND00325,SecureNet Partners,Software_Vendor,Sanjana Martin,sanjana.martin@securenetpartners.com,FedRAMP:2027-03-01,Internal_Data,79,Historical_Breach,408408,2026-10-20,2025-08-09
+VND00326,TechFlow Ltd,MSP,Varun Kelly,varun.kelly@techflowltd.com,HIPAA:2025-10-24,Financial_Data,53,Historical_Breach,3783327,2027-07-15,2025-10-08
+VND00327,Future Systems,SaaS_Provider,Jason Rodriguez,jason.rodriguez@futuresystems.com,ISO27001:2025-12-14,Internal_Data,34,Recent_Breach_12mo,1367147,2027-07-19,2025-04-28
+VND00328,CloudSync Group,MSP,Edward Burke,edward.burke@cloudsyncgroup.com,ISO27001:2026-02-01|GDPR:2026-03-21|SOC2:2026-05-22,Internal_Data,88,No_Known_Breach,1185886,2026-05-12,2025-07-24
+VND00329,CloudSync Services,Hardware_Vendor,Jacob Thomas,jacob.thomas@cloudsyncservices.com,ISO27001:2027-02-15,Public_Data,34,Under_Investigation,1614983,2026-05-16,2025-09-24
+VND00330,Digital Innovations,Consulting,Jeffrey Durand,jeffrey.durand@digitalinnovations.com,FedRAMP:2026-08-09,Public_Data,78,Historical_Breach,1945082,2026-06-15,2025-07-09
+VND00331,Analytics Pro Group,Consulting,George Taylor,george.taylor@analyticsprogroup.com,HIPAA:2026-06-03,Internal_Data,51,No_Known_Breach,1835344,2027-12-21,2025-05-15
+VND00332,SecureNet Partners,MSP,Robert Lewis,robert.lewis@securenetpartners.com,FedRAMP:2026-09-19,Financial_Data,25,No_Known_Breach,237716,2026-12-19,2025-07-20
+VND00333,Enterprise Solutions,Contractor,Anjali Liu,anjali.liu@enterprisesolutions.com,ISO27001:2026-09-13|FedRAMP:2027-01-14|HIPAA:2026-03-24,Internal_Data,14,Recent_Breach_12mo,948774,2027-01-27,2025-08-13
+VND00334,Enterprise Group,Hardware_Vendor,Rajesh Burke,rajesh.burke@enterprisegroup.com,SOC2:2026-07-24|HIPAA:2026-08-14,Financial_Data,91,No_Known_Breach,872560,2026-06-20,2025-07-01
+VND00335,CloudSync Partners,Consulting,Michael Hernandez,michael.hernandez@cloudsyncpartners.com,SOC2:2026-06-30|ISO27001:2027-02-27,Financial_Data,11,Historical_Breach,2726394,2027-06-10,2025-08-07
+VND00336,CloudSync Ltd,SaaS_Provider,Aisha Meyer,aisha.meyer@cloudsyncltd.com,ISO27001:2026-12-19|HIPAA:2027-03-28,Internal_Data,59,Recent_Breach_12mo,1044667,2026-09-25,2025-10-02
+VND00337,DataVault Inc,Hardware_Vendor,George Garcia,george.garcia@datavaultinc.com,SOC2:2027-02-23|PCI-DSS:2025-11-20|FedRAMP:2026-12-26,Internal_Data,98,No_Known_Breach,1420940,2027-10-07,2026-02-11
+VND00338,DataVault Solutions,Cloud_Provider,Sophia Miller,sophia.miller@datavaultsolutions.com,HIPAA:2026-07-06,Internal_Data,53,No_Known_Breach,3155177,2026-09-15,2025-11-10
+VND00339,Analytics Pro Inc,Hardware_Vendor,Ronald Hoffmann,ronald.hoffmann@analyticsproinc.com,ISO27001:2026-07-28|FedRAMP:2026-08-21|SOC2:2026-08-06,Public_Data,18,No_Known_Breach,349267,2027-07-04,2026-02-19
+VND00340,Digital Innovations,Software_Vendor,Vikram Miller,vikram.miller@digitalinnovations.com,HIPAA:2025-10-24|PCI-DSS:2026-10-14,Customer_PII,81,No_Known_Breach,2492954,2027-10-20,2025-09-14
+VND00341,SecureNet Technologies,Consulting,Elena Martinez,elena.martinez@securenettechnologies.com,HIPAA:2026-03-22|FedRAMP:2027-01-19|GDPR:2027-03-04,Internal_Data,22,No_Known_Breach,473003,2026-08-09,2025-10-27
+VND00342,TechFlow Inc,Cloud_Provider,Richard Ghosh,richard.ghosh@techflowinc.com,HIPAA:2026-07-07|PCI-DSS:2026-04-27|ISO27001:2026-10-24,Internal_Data,91,No_Known_Breach,2037505,2027-11-21,2025-05-16
+VND00343,Smart Innovations,Hardware_Vendor,Vikram Rodriguez,vikram.rodriguez@smartinnovations.com,GDPR:2027-01-20|FedRAMP:2025-12-03|HIPAA:2026-03-10,Public_Data,42,No_Known_Breach,856563,2026-04-22,2025-05-31
+VND00344,Global Inc,SaaS_Provider,Robert Sullivan,robert.sullivan@globalinc.com,GDPR:2026-08-29,Internal_Data,18,Under_Investigation,2480390,2027-06-16,2025-09-17
+VND00345,TechFlow Solutions,Data_Provider,Stephen Fischer,stephen.fischer@techflowsolutions.com,HIPAA:2026-08-27,Public_Data,99,No_Known_Breach,4303356,2028-01-31,2025-09-21
+VND00346,TechFlow Services,Data_Provider,Zainab Patel,zainab.patel@techflowservices.com,PCI-DSS:2026-12-13,Public_Data,95,No_Known_Breach,4218073,2026-05-29,2026-02-13
+VND00347,Global Systems,Hardware_Vendor,Paul Brown,paul.brown@globalsystems.com,FedRAMP:2027-02-16|HIPAA:2025-12-01,Financial_Data,92,No_Known_Breach,1070982,2027-10-18,2026-01-08
+VND00348,Analytics Pro Group,MSP,Thomas Sharma,thomas.sharma@analyticsprogroup.com,FedRAMP:2026-03-09|SOC2:2025-12-07|PCI-DSS:2027-04-14,Public_Data,59,Historical_Breach,4980008,2026-05-21,2025-12-18
+VND00349,TechFlow Inc,Security_Vendor,Leila Patel,leila.patel@techflowinc.com,ISO27001:2026-05-23|HIPAA:2026-01-05|PCI-DSS:2026-07-12,Internal_Data,68,No_Known_Breach,4146736,2027-06-24,2025-12-28
+VND00350,SecureNet Services,Hardware_Vendor,Vikram Harris,vikram.harris@securenetservices.com,ISO27001:2026-02-21|SOC2:2026-06-12,Internal_Data,39,No_Known_Breach,1457492,2027-01-02,2025-10-29
+VND00351,Enterprise Solutions,Data_Provider,Ryan Muller,ryan.muller@enterprisesolutions.com,GDPR:2025-12-25|ISO27001:2025-12-25,Internal_Data,20,No_Known_Breach,3942949,2028-01-30,2025-12-02
+VND00352,CloudSync Systems,Hardware_Vendor,Karan Lim,karan.lim@cloudsyncsystems.com,HIPAA:2026-03-16|ISO27001:2026-04-09,Public_Data,38,Recent_Breach_12mo,3309153,2026-10-29,2025-10-14
+VND00353,TechFlow Group,Consulting,Jonathan Gonzalez,jonathan.gonzalez@techflowgroup.com,ISO27001:2027-04-12,Financial_Data,26,No_Known_Breach,1614235,2027-04-01,2025-05-27
+VND00354,Future Corp,Cloud_Provider,Andrew Robinson,andrew.robinson@futurecorp.com,GDPR:2026-08-20|PCI-DSS:2026-12-16,Internal_Data,14,No_Known_Breach,3847790,2028-04-08,2026-01-28
+VND00355,Analytics Pro Innovations,Hardware_Vendor,Sophia Patel,sophia.patel@analyticsproinnovations.com,HIPAA:2026-01-28,Public_Data,36,No_Known_Breach,4959674,2027-12-06,2026-03-13
+VND00356,TechFlow Technologies,Consulting,Jason Hwang,jason.hwang@techflowtechnologies.com,FedRAMP:2026-11-29|HIPAA:2027-01-06|ISO27001:2026-05-07,Public_Data,99,Recent_Breach_12mo,4206810,2026-08-12,2025-06-15
+VND00357,Analytics Pro Group,Security_Vendor,Jeffrey Schmidt,jeffrey.schmidt@analyticsprogroup.com,SOC2:2026-09-21,Internal_Data,76,Recent_Breach_12mo,1049804,2027-05-22,2025-10-12
+VND00358,SecureNet Group,Data_Provider,Harsh Gonzalez,harsh.gonzalez@securenetgroup.com,FedRAMP:2026-03-28|PCI-DSS:2026-02-21,Customer_PII,43,Recent_Breach_12mo,4044271,2026-12-25,2026-02-03
+VND00359,CloudSync Technologies,Security_Vendor,Matthew Park,matthew.park@cloudsynctechnologies.com,PCI-DSS:2025-12-28|GDPR:2027-01-30,Public_Data,35,No_Known_Breach,2712997,2026-09-20,2025-06-24
+VND00360,DataVault Ltd,Security_Vendor,Aditya Esposito,aditya.esposito@datavaultltd.com,FedRAMP:2026-02-20|ISO27001:2026-07-26|GDPR:2025-12-12,Internal_Data,23,Historical_Breach,3592459,2026-11-04,2026-03-03
+VND00361,Digital Innovations,MSP,Jonathan Esposito,jonathan.esposito@digitalinnovations.com,PCI-DSS:2026-07-08|GDPR:2027-02-17|ISO27001:2026-02-21,Customer_PII,41,Recent_Breach_12mo,2782491,2027-01-10,2025-09-21
+VND00362,TechFlow Services,Contractor,Fatima Connor,fatima.connor@techflowservices.com,FedRAMP:2026-02-06|SOC2:2026-06-16|PCI-DSS:2026-10-09,Internal_Data,10,No_Known_Breach,2396217,2028-02-16,2026-03-05
+VND00363,TechFlow Systems,Hardware_Vendor,Edward Becker,edward.becker@techflowsystems.com,PCI-DSS:2027-04-13|HIPAA:2026-05-30,Customer_PII,64,No_Known_Breach,434734,2026-12-24,2025-08-22
+VND00364,CloudSync Ltd,Cloud_Provider,Anjali Rizzo,anjali.rizzo@cloudsyncltd.com,FedRAMP:2026-10-01|HIPAA:2026-04-23|PCI-DSS:2027-01-26,All_Systems,26,No_Known_Breach,1819155,2027-07-26,2026-03-03
+VND00365,Enterprise Systems,Security_Vendor,Edward Liu,edward.liu@enterprisesystems.com,PCI-DSS:2026-12-28,Customer_PII,46,No_Known_Breach,4327121,2027-01-09,2025-05-24
+VND00366,TechFlow Inc,Contractor,Larry Hwang,larry.hwang@techflowinc.com,ISO27001:2027-03-25|HIPAA:2026-01-12,Customer_PII,28,No_Known_Breach,1018600,2028-01-06,2025-04-24
+VND00367,TechFlow Solutions,MSP,Daniel Muller,daniel.muller@techflowsolutions.com,GDPR:2025-11-21|HIPAA:2025-10-30,Customer_PII,48,No_Known_Breach,1732847,2027-12-01,2025-10-25
+VND00368,TechFlow Services,Consulting,James Hernandez,james.hernandez@techflowservices.com,FedRAMP:2026-10-03|HIPAA:2027-04-19|GDPR:2027-01-28,Financial_Data,77,No_Known_Breach,2073199,2026-05-01,2026-01-02
+VND00369,Future Services,Cloud_Provider,Elena Miller,elena.miller@futureservices.com,PCI-DSS:2026-09-18,Internal_Data,58,Historical_Breach,2574459,2027-03-07,2025-09-29
+VND00370,DataVault Solutions,Security_Vendor,Brian Durand,brian.durand@datavaultsolutions.com,SOC2:2026-12-26|ISO27001:2026-02-19|FedRAMP:2026-03-23,Internal_Data,67,No_Known_Breach,1509674,2027-08-12,2025-08-31
+VND00371,TechFlow Group,Security_Vendor,Fatima Smith,fatima.smith@techflowgroup.com,PCI-DSS:2026-01-09|ISO27001:2026-06-13|SOC2:2027-01-03,Internal_Data,14,No_Known_Breach,1891084,2027-02-28,2025-05-12
+VND00372,Global Systems,Software_Vendor,Xiulan Bhat,xiulan.bhat@globalsystems.com,FedRAMP:2025-12-03,Internal_Data,53,No_Known_Breach,4232645,2026-07-21,2025-06-08
+VND00373,Global Ltd,Security_Vendor,Jason Lim,jason.lim@globalltd.com,FedRAMP:2026-02-21|ISO27001:2026-01-06|PCI-DSS:2026-12-16,Public_Data,40,No_Known_Breach,3819988,2028-01-24,2025-12-28
+VND00374,Enterprise Technologies,Consulting,Andrew Burke,andrew.burke@enterprisetechnologies.com,SOC2:2025-12-20|FedRAMP:2026-04-11|HIPAA:2026-03-24,Public_Data,27,No_Known_Breach,3927453,2027-01-05,2026-01-15
+VND00375,TechFlow Technologies,SaaS_Provider,Akshay Brown,akshay.brown@techflowtechnologies.com,PCI-DSS:2026-07-30|FedRAMP:2026-01-07,Public_Data,26,No_Known_Breach,1089032,2026-11-01,2025-11-11
+VND00376,CloudSync Technologies,SaaS_Provider,Priya Perez,priya.perez@cloudsynctechnologies.com,FedRAMP:2025-11-03,Customer_PII,64,Under_Investigation,718434,2026-05-02,2025-05-18
+VND00377,Future Inc,SaaS_Provider,Deepika Moore,deepika.moore@futureinc.com,HIPAA:2026-10-13,All_Systems,71,Recent_Breach_12mo,612785,2027-03-26,2026-01-18
+VND00378,Global Corp,Cloud_Provider,Paul Singh,paul.singh@globalcorp.com,PCI-DSS:2027-02-19|GDPR:2026-12-21,Customer_PII,92,No_Known_Breach,2067025,2027-04-12,2025-08-09
+VND00379,TechFlow Services,Hardware_Vendor,Richard Gonzalez,richard.gonzalez@techflowservices.com,SOC2:2026-05-16,Financial_Data,35,No_Known_Breach,2769913,2028-01-23,2025-07-22
+VND00380,Digital Inc,MSP,Mark Rizzo,mark.rizzo@digitalinc.com,HIPAA:2026-09-23,Customer_PII,48,No_Known_Breach,95997,2026-04-08,2026-03-08
+VND00381,Digital Services,Cloud_Provider,Elena Harris,elena.harris@digitalservices.com,GDPR:2026-05-12,Public_Data,54,No_Known_Breach,1710405,2027-01-03,2025-05-05
+VND00382,CloudSync Technologies,Software_Vendor,Michael Clark,michael.clark@cloudsynctechnologies.com,FedRAMP:2026-01-05|HIPAA:2026-02-10,Internal_Data,70,No_Known_Breach,3329052,2027-12-22,2026-01-04
+VND00383,Digital Solutions,Hardware_Vendor,Meera Colombo,meera.colombo@digitalsolutions.com,PCI-DSS:2026-09-13|HIPAA:2025-12-15,Customer_PII,50,Recent_Breach_12mo,903604,2026-11-02,2026-03-05
+VND00384,TechFlow Solutions,MSP,Yuki Menon,yuki.menon@techflowsolutions.com,SOC2:2027-03-02,Public_Data,12,No_Known_Breach,1858461,2026-12-29,2025-05-15
+VND00385,Enterprise Inc,Consulting,Sofia Weber,sofia.weber@enterpriseinc.com,PCI-DSS:2026-02-12,Public_Data,54,No_Known_Breach,734170,2027-12-22,2025-12-22
+VND00386,Smart Ltd,Cloud_Provider,Matthew Das,matthew.das@smartltd.com,HIPAA:2026-11-16,Internal_Data,68,No_Known_Breach,2615564,2026-12-23,2025-06-10
+VND00387,Global Services,Software_Vendor,Sophia Bianchi,sophia.bianchi@globalservices.com,HIPAA:2026-08-27|SOC2:2027-04-02|FedRAMP:2026-10-03,Internal_Data,52,Historical_Breach,3019464,2027-10-13,2026-02-07
+VND00388,TechFlow Technologies,Data_Provider,Aisha Romano,aisha.romano@techflowtechnologies.com,ISO27001:2025-12-09|HIPAA:2027-03-01|SOC2:2026-10-18,Public_Data,32,Recent_Breach_12mo,1695157,2027-10-19,2026-01-24
+VND00389,CloudSync Innovations,Data_Provider,Elena Yang,elena.yang@cloudsyncinnovations.com,PCI-DSS:2026-02-06,Public_Data,63,Recent_Breach_12mo,1135200,2026-06-08,2026-02-25
+VND00390,DataVault Group,SaaS_Provider,Jeffrey Miller,jeffrey.miller@datavaultgroup.com,FedRAMP:2026-09-27|GDPR:2025-12-06,Customer_PII,84,No_Known_Breach,2711116,2027-02-19,2026-02-26
+VND00391,Global Services,Contractor,Jeffrey Harris,jeffrey.harris@globalservices.com,HIPAA:2026-01-09|ISO27001:2026-07-22|PCI-DSS:2026-12-12,Internal_Data,58,No_Known_Breach,4869364,2026-06-28,2026-01-07
+VND00392,Digital Innovations,SaaS_Provider,David Hernandez,david.hernandez@digitalinnovations.com,FedRAMP:2026-10-15,Customer_PII,93,No_Known_Breach,969163,2027-07-19,2025-12-16
+VND00393,SecureNet Innovations,SaaS_Provider,Jason Lee,jason.lee@securenetinnovations.com,HIPAA:2027-04-03,Customer_PII,49,No_Known_Breach,1592233,2027-04-25,2025-12-22
+VND00394,Future Group,MSP,Jacob Choi,jacob.choi@futuregroup.com,HIPAA:2026-01-12|FedRAMP:2026-03-12|SOC2:2027-04-12,Internal_Data,64,No_Known_Breach,4079363,2027-05-14,2025-08-30
+VND00395,CloudSync Innovations,Hardware_Vendor,Anjali Pillai,anjali.pillai@cloudsyncinnovations.com,HIPAA:2026-03-07|SOC2:2026-08-07,Customer_PII,18,No_Known_Breach,2459866,2027-08-24,2025-05-01
+VND00396,Enterprise Solutions,Security_Vendor,Aisha Huang,aisha.huang@enterprisesolutions.com,ISO27001:2026-03-19|GDPR:2027-02-01|HIPAA:2026-02-01,Public_Data,62,No_Known_Breach,921962,2026-11-28,2025-07-06
+VND00397,Smart Systems,Security_Vendor,Xiulan Guo,xiulan.guo@smartsystems.com,HIPAA:2027-02-13|PCI-DSS:2026-01-29,Customer_PII,64,No_Known_Breach,358415,2027-07-19,2026-01-13
+VND00398,DataVault Corp,Software_Vendor,Kenneth Han,kenneth.han@datavaultcorp.com,SOC2:2026-07-16|ISO27001:2026-01-28,Public_Data,79,No_Known_Breach,4842542,2027-02-14,2026-02-05
+VND00399,Analytics Pro Partners,Cloud_Provider,Meera Thomas,meera.thomas@analyticspropartners.com,HIPAA:2027-02-16,Customer_PII,79,Recent_Breach_12mo,2132938,2028-03-26,2026-03-14
